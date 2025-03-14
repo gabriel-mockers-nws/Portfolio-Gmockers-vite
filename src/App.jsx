@@ -14,14 +14,17 @@ function App() {
 
 
   return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path="/projet" element={<Projects />}/>
-      </Routes>
-      <Footer />
-    </Router>
+    <>
+    <div className="absolute inset-0 bg-[url('./assets/img/synth-bg.svg')] bg-cover bg-center bg-fixed -z-10"></div>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home />}/>
+          <Route path="/projet" element={<Projects />}/>
+        </Routes>
+        <Footer />
+      </Router>
+    </>
   )
 }
 
