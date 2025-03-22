@@ -1,9 +1,6 @@
-# React + Vite
+# Portfolio React + Vite + tailwindcss
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-TailwindCSS 
-Router
+Ce projet est le portage de mon porfolio déja existant en wordpress vers du code. L'utilisation du React construit avec vite, stylisé avec tailwindcss à été fait pour plus de facilité mais aussi me permetant d'apprendre à utiliser ces frameworks. 
 
 Currently, two official plugins are available:
 

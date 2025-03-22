@@ -14,8 +14,9 @@ function App() {
 
 
   return (
-    <>
-    <div className="absolute inset-0 bg-[url('./assets/img/synth-bg.svg')] bg-cover bg-center bg-fixed -z-10"></div>
+
+   <>
+       <div className=" inset-0 bg-[url('./assets/img/synth-bg.svg')] bg-cover bg-center bg-fixed relative">
       <Router>
         <Header />
         <Routes>
@@ -24,7 +25,8 @@ function App() {
         </Routes>
         <Footer />
       </Router>
-    </>
+      </div> 
+  </>
   )
 }
 
