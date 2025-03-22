@@ -18,7 +18,7 @@ export const Home = () => {
                 </div>
             </div>
 
-            <div className="w-full py-10 px-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg">
+            <div className="w-full py-5 px-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg">
                 <h3 className="text-3xl font-bold mb-6 underline underline-offset-15 font-Orbitron">Mes centres d&apos;intérêts</h3>
 
                 <div className="xl:grid xl:grid-cols-6 gap-8 lg:grid md:grid ">
@@ -97,7 +97,7 @@ export const Home = () => {
                     <h3 className="text-3xl font-bold mb-6 underline underline-offset-15 font-inter">Aperçu de mes projets</h3>
                     <p>Voici un petit aperçu de mes projets école et personnels</p>
                 </div>
-                <div className="xl:grid xl:grid-cols-3 gap-8 lg:flex text-center">
+                <div className="xl:grid xl:grid-cols-3 gap-8 lg:flex text-center xl:px-10 xl:py-5">
                     <div>
                         <h4 className="text-xl font-semibold mb-2">Portage portfolio en React</h4>
                         <p className="text-sm">
