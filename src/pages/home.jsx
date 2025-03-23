@@ -75,7 +75,7 @@ export const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-between items-center w-full px-10 py-5">
+            <div className="flex justify-between items-center w-full px-10 py-5 mt-10">
                 <button className="flex-0.5 bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3 mx-2 focus:bg-amber-600 text-center" >
                     <a href="https://www.linkedin.com/in/gabriel-mockers/">Mon Linkedin</a> <i className="fa-brands fa-linkedin-in"/> 
                 </button>
@@ -85,7 +85,7 @@ export const Home = () => {
                 </button>
 
                 <button className="flex-0.5  bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3 mx-2 focus:bg-amber-600 text-center" >
-                    <a href="#">Me contacter</a> <i className="fa-solid fa-envelope"/>
+                    <a href="mailto:gmockers@normandiewebschool.fr">Me contacter</a> <i className="fa-solid fa-envelope"/>
                 </button>
 
                 <button className="flex-0.5  bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3 mx-2 focus:bg-amber-600 text-center" >
@@ -100,7 +100,7 @@ export const Home = () => {
                 <div className="xl:grid xl:grid-cols-3 gap-8 lg:flex text-center xl:px-10 xl:py-5">
                     <div>
                         <h4 className="text-xl font-semibold mb-2">Portage portfolio en React</h4>
-                        <p className="text-sm">
+                        <p className="text-sm  xl:py-3">
                             Mon profolio en react et vite
                         </p>
                         <img src="/projets/vite+react.png" alt="projet-vite-react" className="h-[27vh] w-[60vh] " />
@@ -108,7 +108,7 @@ export const Home = () => {
 
                     <div>
                         <h4 className="text-xl font-semibold mb-2">Soundspire</h4>
-                        <p className="text-sm">
+                        <p className="text-sm xl:py-3">
                             Soundspire est un projet d&apos;école réalisé en groupe.
                         </p>
                         <img src="/projets/soundspire.png" alt="home-soundspire" className="h-[27vh] w-[60vh] " />
@@ -116,7 +116,7 @@ export const Home = () => {
 
                     <div>
                         <h4 className="text-xl font-semibold mb-2">Action Marketing</h4>
-                        <p className="text-sm">
+                        <p className="text-sm xl:py-3">
                             Compréhension & réalisation de projet publicitaire pour une marque.
                         </p>
                         <img src="/projets/action-marketing.png" alt="presentation-support" className="h-[27vh] w-[60vh] "/>
