@@ -5,9 +5,8 @@ export const Footer =  () => {
             <div className="py-5 px-10 flex relative items-center ">
                 <div className="py-5 flex items-center absolute left-10">
                     <p className="flex items-center">
-                        Projet réaliser avec Vite &nbsp;<img src="/vite.svg" alt="vite-logo" /> + React&nbsp; <img src="/react.svg" alt="react-logo" /> 
+                        Projet réalisé avec Vite &nbsp;<img src="/vite.svg" alt="vite-logo" /> + React&nbsp; <img src="/react.svg" alt="react-logo" /> 
                     </p>
-                    {/* <img src="/vite.svg" alt="" /> <img src="/react.svg" alt="" /> */}
                 </div>
                 <div className="py-5 flex justify-center w-full">
                     <div className="">
