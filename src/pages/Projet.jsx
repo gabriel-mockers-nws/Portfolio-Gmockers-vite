@@ -1,11 +1,11 @@
 // import { useState } from "react";
 import { Route, Routes, Link } from "react-router-dom";
-import { ToolBox } from "./projets-ecole/BoiteOutil";
-import { ComGraph } from "./projets-ecole/ComGraph";
-import { ComWeb } from "./projets-ecole/ComWeb";
-import { Marketing } from "./projets-ecole/Marketing";
-import { DevWeb } from "./projets-perso/DevWeb";
-import { Pics } from "./projets-perso/Photo";
+import  ToolBox  from "./projets-ecole/BoiteOutil";
+import  ComGraph  from "./projets-ecole/ComGraph";
+import  ComWeb  from "./projets-ecole/ComWeb";
+import  Marketing  from "./projets-ecole/Marketing";
+import  DevWeb  from "./projets-perso/DevWeb";
+import  Pics  from "./projets-perso/Photo";
 
 
 
@@ -18,10 +18,10 @@ export const Projects = () => {
             <div> 
                 <h3>Projets d&apos;école</h3>
                 <nav>
-                    <Link to="projets-ecole/BoiteOutil" />
-                    <Link to="projets-ecole/ComGraph" />
-                    <Link to="projets-ecole/ComWeb" />
-                    <Link to="projets-ecole/Marketing" />
+                    <Link to="projets-ecole/BoiteOutil"> Boite à outil numérique </Link>
+                    <Link to="projets-ecole/ComGraph"> Communication Graphique </Link>
+                    <Link to="projets-ecole/ComWeb" > Communication Web </Link>
+                    <Link to="projets-ecole/Marketing"> Marketing et communication digitale </Link>
                 </nav>
             </div>
             <div>

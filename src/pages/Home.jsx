@@ -77,15 +77,15 @@ export const Home = () => {
             </div>
             <div className="flex justify-between items-center w-full px-10 py-5 mt-10">
                 <button className="flex-0.5 bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3 mx-2 focus:bg-amber-600 text-center" >
-                    <a href="https://www.linkedin.com/in/gabriel-mockers/">Mon Linkedin</a> <i className="fa-brands fa-linkedin-in"/> 
+                    <a href="https://www.linkedin.com/in/gabriel-mockers/" target="_blank">Mon Linkedin</a> <i className="fa-brands fa-linkedin-in"/> 
                 </button>
 
                 <button className="flex-0.5 bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3 mx-2 focus:bg-amber-600 text-center" >
-                    <a href="https://github.com/gabriel-mockers-nws">Github</a> <i className="fa-brands fa-github"/>
+                    <a href="https://github.com/gabriel-mockers-nws" target="_blank">Github</a> <i className="fa-brands fa-github"/>
                 </button>
 
                 <button className="flex-0.5  bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3 mx-2 focus:bg-amber-600 text-center" >
-                    <a href="mailto:gmockers@normandiewebschool.fr">Me contacter</a> <i className="fa-solid fa-envelope"/>
+                    <a href="mailto:gmockers@normandiewebschool.fr" target="_blank">Me contacter</a> <i className="fa-solid fa-envelope"/>
                 </button>
 
                 <button className="flex-0.5  bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3 mx-2 focus:bg-amber-600 text-center" >

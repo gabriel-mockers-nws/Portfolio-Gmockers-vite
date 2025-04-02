@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Header } from "./components/Header";
-import { Footer } from "./components/Footer";
+import  Header  from "./components/Header";
+import  Footer  from "./components/Footer";
 // import { createBrowserRouter } from 'react-router';
 import './styles.css'
-import Home from './pages/Home';
-import { Projects } from './pages/Projet';
+import Home from './pages/home';
+import Projects  from './pages/Projet';
 
 // const router = createBrowserRouter([
   
