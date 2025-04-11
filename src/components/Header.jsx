@@ -28,7 +28,7 @@ export const Header = () => {
                 <h2 className="text-white text-5xl font-bold p-5"> Gabriel MOCKERS</h2>
                 <h4 className="text-white">Mon Portfolio</h4>
                 <button className="text-white bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3 m-1 focus:bg-amber-600" >
-                    <a href="https://github.com/gabriel-mockers-nws">Voir mon Github</a> <i className="fa-brands fa-github"/>
+                    <a href="https://github.com/gabriel-mockers-nws" target="_blank">Voir mon Github</a> <i className="fa-brands fa-github"/>
                 </button>
             </div>     
         </>

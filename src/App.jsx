@@ -4,8 +4,7 @@ import  Footer  from "./components/Footer";
 // import { createBrowserRouter } from 'react-router';
 import './styles.css'
 import Home from './pages/home';
-import Projects  from './pages/Projet';
-
+import Projects  from './pages/projet';
 // const router = createBrowserRouter([
   
 // ])

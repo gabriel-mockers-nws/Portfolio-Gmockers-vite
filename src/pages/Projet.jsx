@@ -1,47 +1,72 @@
-// import { useState } from "react";
-import { Route, Routes, Link } from "react-router-dom";
-import  ToolBox  from "./projets-ecole/BoiteOutil";
-import  ComGraph  from "./projets-ecole/ComGraph";
-import  ComWeb  from "./projets-ecole/ComWeb";
-import  Marketing  from "./projets-ecole/Marketing";
-import  DevWeb  from "./projets-perso/DevWeb";
-import  Pics  from "./projets-perso/Photo";
 
-
-
+import { useState } from "react";
+import ToolBox from "./projets-ecole/BoiteOutil";
+import ComGraph from "./projets-ecole/ComGraph";
+import ComWeb from "./projets-ecole/ComWeb";
+import Marketing from "./projets-ecole/Marketing";
+import DevWeb from "./projets-perso/DevWeb";
+import Pics from "./projets-perso/Photo";
 
 export const Projects = () => {
-    // const [activeBox, setActiveBox] = useState("ecole");
-    return (
+  const [activeBox, setActiveBox] = useState("ecole");
+  const [activeProject, setActiveProject] = useState("BoiteOutil");
 
-        <>
-            <div> 
-                <h3>Projets d&apos;école</h3>
-                <nav>
-                    <Link to="projets-ecole/BoiteOutil"> Boite à outil numérique </Link>
-                    <Link to="projets-ecole/ComGraph"> Communication Graphique </Link>
-                    <Link to="projets-ecole/ComWeb" > Communication Web </Link>
-                    <Link to="projets-ecole/Marketing"> Marketing et communication digitale </Link>
-                </nav>
-            </div>
-            <div>
-                <h3>Projets personnels</h3>
-                <nav>
-                    <Link to="projets-perso/DevWeb" />
-                    <Link to="projets-perso/Photo" />
-                </nav>
-            </div>
+  const renderProjectComponent = () => {
+    switch (activeProject) {
+      case "BoiteOutil":
+        return <ToolBox />;
+      case "ComGraph":
+        return <ComGraph />;
+      case "ComWeb":
+        return <ComWeb />;
+      case "Marketing":
+        return <Marketing />;
+      case "DevWeb":
+        return <DevWeb />;
+      case "Photo":
+        return <Pics />;
+    }
+  };
 
-            <Routes>
-                <Route path="projets-ecole/BoiteOutil" element={<ToolBox />} />
-                <Route path="projets-ecole/ComGraph" element={<ComGraph />} />
-                <Route path="projets-ecole/ComDev" element={<ComWeb />} />
-                <Route path="projets-ecole/Marketing" element={<Marketing />} />
-                <Route path="projets-perso/DevWeb" element={<DevWeb />} />
-                <Route path="projets-perso/Photo" element={<Pics />} />
-            </Routes>
-        </>
-    );
-}
+  return (
+    <div className="p-4">
+      {/* Choix de catégorie */}
+      <div className="flex gap-4 mb-6">
+        <button
+          className={`px-4 py-2 rounded ${activeBox === "ecole" ? "bg-orange-400 text-white" : "bg-gray-200"}`}
+          onClick={() => setActiveBox("ecole")}
+        >
+          Projets École
+        </button>
+        <button
+          className={`px-4 py-2 rounded ${activeBox === "perso" ? "bg-green-500 text-white" : "bg-gray-200"}`}
+          onClick={() => setActiveBox("perso")}
+        >
+          Projets Personnels
+        </button>
+      </div>
+
+      {/* Liste des projets */}
+      {activeBox === "ecole" && (
+        <div className="space-x-4 mb-4">
+          <button onClick={() => setActiveProject("BoiteOutil")}>Boite à outil numérique</button>
+          <button onClick={() => setActiveProject("ComGraph")}>Communication Graphique</button>
+          <button onClick={() => setActiveProject("ComWeb")}>Communication Web</button>
+          <button onClick={() => setActiveProject("Marketing")}>Marketing</button>
+        </div>
+      )}
+
+      {activeBox === "perso" && (
+        <div className="space-x-4 mb-4">
+          <button onClick={() => setActiveProject("DevWeb")}>Développement Web</button>
+          <button onClick={() => setActiveProject("Photo")}>Photographie</button>
+        </div>
+      )}
+
+      {/* Contenu du projet sélectionné */}
+      <div className="mt-6">{renderProjectComponent()}</div>
+    </div>
+  );
+};
 
 export default Projects;

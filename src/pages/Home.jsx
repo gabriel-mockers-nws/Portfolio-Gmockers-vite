@@ -85,7 +85,7 @@ export const Home = () => {
                 </button>
 
                 <button className="flex-0.5  bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3 mx-2 focus:bg-amber-600 text-center" >
-                    <a href="mailto:gmockers@normandiewebschool.fr" target="_blank">Me contacter</a> <i className="fa-solid fa-envelope"/>
+                    <a href="mailto:gmockers@normandiewebschool.fr">Me contacter</a> <i className="fa-solid fa-envelope"/>
                 </button>
 
                 <button className="flex-0.5  bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3 mx-2 focus:bg-amber-600 text-center" >
