@@ -52,7 +52,7 @@ export const Home = () => {
                     <div>
                         <h4 className="text-xl font-semibold mb-2">Streaming</h4>
                         <p className="text-sm">
-                            Depuis un an maintenant, je prend énormément de plaisir à partager mes séances de jeux, ou tout simplement discuter sur la plateforme&nbsp;
+                            Depuis maintenant trois ans, je prend énormément de plaisir à partager mes séances de jeux, ou tout simplement discuter sur la plateforme&nbsp;
                             <a href="https://www.twitch.tv/legiolf" className="font-bold underline hover:no-underline">Twitch</a>. Pour ce faire, j&apos;utilise un avatar
                             de mon personnage à la place da la caméra pour animer mes streams. Le nom de ma chaine est mon pseudonyme, Legiolf.
                         </p>
@@ -94,7 +94,7 @@ export const Home = () => {
             </div>
             <div className="xl:px-10 xl:py-5">
                 <div className="py-2">
-                    <h3 className="text-3xl font-bold mb-6 underline underline-offset-15 font-inter">Aperçu de mes projets</h3>
+                    <h3 className="text-3xl font-bold mb-6 underline underline-offset-15 font-Orbitron">Aperçu de mes projets</h3>
                     <p>Voici un petit aperçu de mes projets école et personnels</p>
                 </div>
                 <div className="xl:grid xl:grid-cols-3 gap-8 lg:flex text-center xl:px-10 xl:py-5">
