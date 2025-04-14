@@ -1,3 +1,12 @@
+import ImageCarousel from "../../components/Carousel";
+
+const ImagesMarketing = [
+    "/projets/BDEShop/BDEShopD1.png",
+    "/projets/BDEShop/BDEShopD3.png",
+    "/projets/BDEShop/BDEShopM1.png",
+    "/projets/BDEShop/BDEShopM2.png",
+];
+
 export const Marketing = () => {
 
     return (
@@ -11,7 +20,7 @@ export const Marketing = () => {
                 </p>
             </div>
             <div>
-                <img src="/projets/Persona.svg" alt="Présentation-persona" className="h-[27vh] w-[57vh] " />
+                <img src="/projets/Persona.svg" alt="Présentation-persona" className="h-[27vh] w-[60vh] " />
             </div>
         </div>
         
@@ -27,6 +36,18 @@ export const Marketing = () => {
                 <button className="flex-0.5 bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3 mx-2 focus:bg-amber-600 text-center" >
                     <a href="https://www.canva.com/design/DAGba5z4tPo/X7pvPWmWuby2yWPIWkIPqg/edit" target="_blank">Lien du projet</a> <i className="fa-solid fa-diagram-project"/>
                 </button>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h4>BDE Shop</h4>
+                <p>
+                    Nous avions pour devoir de réaliser le site de vente du BDE de la Normandie Web school à partir de la maquette figma conçue auparavant &#40;voir projet UX/UI dans l&apos;onglet communication graphique&#41;. Le tout en respectant une charte graphique déjà existante. 
+                </p>
+            </div>
+            <div>
+                <ImageCarousel images={ImagesMarketing} />
             </div>
         </div>
         </>
