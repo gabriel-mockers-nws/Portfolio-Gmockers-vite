@@ -58,8 +58,8 @@ export const Projects = () => {
 
       {activeBox === "perso" && (
         <div className="space-x-4 mb-4">
-          <button onClick={() => setActiveProject("DevWeb")}>Développement Web</button>
-          <button onClick={() => setActiveProject("Photo")}>Photographie</button>
+          <button onClick={() => setActiveProject("DevWeb")} className={`cursor-pointer px-2 py-1 transition duration-200 ${activeProject === "DevWeb" ? "text-orange-400 font-semibold" : "text-gray-50 hover:text-orange-300 hover:underline underline-offset-2" }`}>Développement Web</button>
+          <button onClick={() => setActiveProject("Photo")} className={`cursor-pointer px-2 py-1 transition duration-200 ${activeProject === "Photo" ? "text-orange-400 font-semibold" : "text-gray-50 hover:text-orange-300 hover:underline underline-offset-2" }`}>Photographie</button>
         </div>
       )}
 
