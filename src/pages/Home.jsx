@@ -89,7 +89,7 @@ export const Home = () => {
                 </button>
 
                 <button className="flex-0.5  bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3 mx-2 focus:bg-amber-600 text-center" >
-                    <a href="/images/myw3schoolsimage.jpg" download>Télécharger mon cv</a> <i className="fa-solid fa-file-arrow-down"/>
+                    <a href="/images/myw3schoolsimage.jpg" target="_blank"download>Télécharger mon cv</a> <i className="fa-solid fa-file-arrow-down"/>
                 </button>
             </div>
             <div className="xl:px-10 xl:py-5">
