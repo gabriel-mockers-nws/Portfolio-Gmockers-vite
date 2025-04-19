@@ -7,7 +7,7 @@ export default function ImageCarousel({ images }) {
         <Carousel autoPlay infiniteLoop showThumbs={false}>
             {images.map((src, i) => (
                 <div key={i} >
-                    <img src={src} alt={`Slide ${i + 1}`} className="h-[60vh] w-[60vh] object-contain" />
+                    <img src={src} alt={`Slide ${i + 1}`} className="h-[27vh] w-[60vh] object-contain" />
                 </div>
             ))}
 
