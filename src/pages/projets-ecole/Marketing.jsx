@@ -1,10 +1,10 @@
 import ImageCarousel from "../../components/Carousel";
 
 const ImagesMarketing = [
-    "/projets/BDEShop/BDEShopD1.png",
-    "/projets/BDEShop/BDEShopD3.png",
-    "/projets/BDEShop/BDEShopM1.png",
-    "/projets/BDEShop/BDEShopM2.png",
+    "/projets/Marketing/BDEShop/BDEShopD1.png",
+    "/projets/Marketing/BDEShop/BDEShopD3.png",
+    "/projets/Marketing/BDEShop/BDEShopM1.png",
+    "/projets/Marketing/BDEShop/BDEShopM2.png",
 ];
 
 export const Marketing = () => {
@@ -12,7 +12,7 @@ export const Marketing = () => {
     return (
         <>
         <div className="flex flex-row items-center gap-8 my-8" >
-            <img src="/projets/Persona.svg" alt="Présentation-persona" className="h-[27vh] w-[60vh]  " />
+            <img src="/projets/Marketing/Persona.svg" alt="Présentation-persona" className="h-[27vh] w-[60vh]  " />
             <div  className="w-[60%]">
                 <h4 className="text-xl font-semibold mb-2">Persona</h4>
                 <p className="text-base leading-relaxed">
@@ -22,7 +22,7 @@ export const Marketing = () => {
         </div>
         
         <div className="flex flex-row-reverse items-center gap-6 my-8">
-            <img src="/projets/action-marketing.png" alt="Action Marketing" className="h-[27vh] w-[60vh] "/>
+            <img src="/projets/Marketing/action-marketing.png" alt="Action Marketing" className="h-[27vh] w-[60vh] "/>
             <div className="w-[60%]">
                 <h4 className="text-xl font-semibold mb-2">Action Marketing</h4>
                 <p className="text-base leading-relaxed">
