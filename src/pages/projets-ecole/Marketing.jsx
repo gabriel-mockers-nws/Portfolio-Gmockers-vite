@@ -1,11 +1,4 @@
-import ImageCarousel from "../../components/Carousel";
 
-const ImagesMarketing = [
-    "/projets/Marketing/BDEShop/BDEShopD1.png",
-    "/projets/Marketing/BDEShop/BDEShopD3.png",
-    "/projets/Marketing/BDEShop/BDEShopM1.png",
-    "/projets/Marketing/BDEShop/BDEShopM2.png",
-];
 
 export const Marketing = () => {
 
@@ -37,12 +30,12 @@ export const Marketing = () => {
             </div>
         </div>
 
-        <div className="flex flex-row items-center gap-6 my-8">
-            <ImageCarousel images={ImagesMarketing} />
+        <div className="flex flex-row items-center gap-8 my-8" >
+            <img src="/projets/Marketing/BDEShopD3.png" alt="Présentation-persona" className="h-[27vh] w-[60vh]  " />
             <div  className="w-[60%]">
                 <h4 className="text-xl font-semibold mb-2">BDE Shop</h4>
-                <p  className="text-base leading-relaxed">
-                    Nous avions pour devoir de réaliser le site de vente du BDE de la Normandie Web school à partir de la maquette figma conçue auparavant &#40;voir projet UX/UI dans l&apos;onglet communication graphique&#41;. Le tout en respectant une charte graphique déjà existante. 
+                <p className="text-base leading-relaxed">
+                    Nous avions pour devoir de réaliser le site de vente du BDE de la Normandie Web school à partir de la maquette figma conçue auparavant &#40;voir projet UX/UI dans l&apos;onglet communication graphique&#41;. Le tout en respectant une charte graphique déjà existante.
                 </p>
             </div>
         </div>
