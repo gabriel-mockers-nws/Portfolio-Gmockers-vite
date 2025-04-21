@@ -1,4 +1,5 @@
-import ImageCarousel from "../../components/Carousel";
+import SwiperCarousel from "../../components/SwiperCarousel";
+
 
 const ImagesToolBox = [
     "/projets/BoiteOutil/projet-photo/face.JPG",
@@ -47,7 +48,7 @@ export const ToolBox = () => {
         </div>
 
         <div className="flex flex-row-reverse items-center gap-6 my-8">
-            <ImageCarousel images={ImagesToolBox} />
+            <SwiperCarousel images={ImagesToolBox} />
             <div  className="w-[60%]">
                 <h4 className="text-xl font-semibold mb-2">BDE Shop</h4>
                 <p  className="text-base leading-relaxed">

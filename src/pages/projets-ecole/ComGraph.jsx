@@ -1,4 +1,4 @@
-import ImageCarousel from "../../components/Carousel";
+import SwiperCarousel from "../../components/SwiperCarousel";
 
 const ImagesUX_UI = [
     "/projets/ComGraph/BDEShop/maquette.png",
@@ -13,7 +13,7 @@ export const ComGraph = () => {
     return (
         <>
         <div className="flex flex-row items-center gap-6 my-8">
-            <ImageCarousel images={ImagesUX_UI} />
+            <SwiperCarousel images={ImagesUX_UI} />
             <div  className="w-[60%]">
                 <h4 className="text-xl font-semibold mb-2">BDE Shop</h4>
                 <p  className="text-base leading-relaxed">
