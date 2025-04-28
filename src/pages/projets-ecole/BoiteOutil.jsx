@@ -62,7 +62,6 @@ export const ToolBox = () => {
         src="https://www.youtube.com/embed/NSnTVHA555c?si=3QixNLyxJnH1SMwA"
         title="YouTube video player"
         className="h-[27vh] w-[60vh] rounded-md shadow-md"
-        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
