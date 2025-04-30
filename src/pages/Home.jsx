@@ -1,10 +1,10 @@
 export const Home = () => {
     return (
         <>
-            <div className="flex items-center justify-between xl:px-10 xl:py-5 lg:px-15 lg:py-5 md:py-5 md:px-10 sm:px-10 sm:py-5 ">
+            <div className="flex items-center justify-between xl:px-10 xl:py-5 lg:px-15 lg:py-5 md:py-5 md:px-10 sm:px-10 sm:py-5 mb-12">
                 <div className=" ">
                     <h3 className="text-3xl font-bold underline underline-offset-15 font-Orbitron">Qui suis-je ?</h3>
-                    <p className="mt-6">
+                    <p className="mt-6 mb-8">
                         Bienvenue ici, je m&apos;appelle Gabriel, un étudiant dynamique et social, 
                         &quot;Chef de projet Digital&quot; option développement web, en recherche d&apos;alternance.
                         Passionné par le web depuis longtemps, j&apos;ai réalisé plusieurs projets personnels et professionnels 
@@ -12,13 +12,16 @@ export const Home = () => {
                         Alors, n&apos;ayez plus d&apos;hésitation et consultez mon site pour découvrir mes projets, 
                         mais aussi mes passions et centres d&apos;intérêts. Je suis certain que nous en partageons quelques-uns !
                     </p>
+                    <button className="flex-0.5  bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3  focus:bg-amber-600 text-center" >
+                    <a href="/images/myw3schoolsimage.jpg" target="_blank"download>Télécharger mon cv</a> <i className="fa-solid fa-file-arrow-down"/>
+                </button>
                 </div>
                 <div className="w-1/2 flex justify-end">
                 <img src="/photo-profil.jpg" alt="Gabriel" className="rounded-lg  "/>
                 </div>
             </div>
 
-            <div className="w-full py-5 px-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg">
+            <div className="w-full py-5 px-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg mb-20">
                 <h3 className="text-3xl font-bold mb-6 underline underline-offset-15 font-Orbitron">Mes centres d&apos;intérêts</h3>
 
                 <div className="xl:grid xl:grid-cols-6 gap-8 lg:grid md:grid ">
@@ -75,7 +78,7 @@ export const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-between items-center w-full px-10 py-5 mt-10">
+            <div className="flex justify-between items-center w-full px-10 py-5 mt-10 mb-15">
                 <button className="flex-0.5 bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3 mx-2 focus:bg-amber-600 text-center" >
                     <a href="https://www.linkedin.com/in/gabriel-mockers/" target="_blank">Mon Linkedin</a> <i className="fa-brands fa-linkedin-in"/> 
                 </button>
