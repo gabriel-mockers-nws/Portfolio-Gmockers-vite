@@ -1,4 +1,5 @@
 import SwiperCarousel from "../../components/SwiperCarousel";
+import Button from "../../components/Button";
 
 const LeBonpoil = [
     "/projets/DevWeb/Le-bon-poil/mainpage1.png",
@@ -33,12 +34,7 @@ export const DevWeb = () => {
                     <br />
                     Ce projet à été fait en suivant un cours sur internet <em>&#40;Grafikart HTML&#41;</em>. Cela m&apos;a permis de comprendre les bases de ces deux langages et la construction d&apos;un site web.
                 </p>
-                <button className="flex-0.5 bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3 my-3 focus:bg-amber-600 text-center" >
-                    <a href="https://github.com/gabriel-mockers-nws/Restaurant-Le-Bon-Poil" target="_blank">
-                    Lien du projet&nbsp;
-                    </a> 
-                    <i className="fa-brands fa-github"/>
-                </button>
+                <Button href={"https://github.com/gabriel-mockers-nws/Restaurant-Le-Bon-Poil"} target="_blank">Lien du projet &nbsp; <i className="fa-brands fa-github"/></Button>
             </div>
         </div>
 
@@ -52,12 +48,7 @@ export const DevWeb = () => {
                     <br />
                     Ce projet à été fait en suivant un cours sur internet <em>&#40;Grafikart CSS&#41;</em>. Cela m&apos;a permis de comprendre les spécificité du langage CSS  et les possibilités de style d&apos;un site web.
                 </p>
-                <button className="flex-0.5 bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3 my-3 focus:bg-amber-600 text-center" >
-                    <a href="https://github.com/gabriel-mockers-nws/Demoblog" target="_blank">
-                    Lien du projet&nbsp;
-                    </a> 
-                    <i className="fa-brands fa-github"/>
-                </button>
+                <Button href={"https://github.com/gabriel-mockers-nws/Demoblog"} target="_blank">Lien du projet &nbsp;<i className="fa-brands fa-github"/></Button>
             </div>
         </div>
 
@@ -72,12 +63,7 @@ export const DevWeb = () => {
                     <br />
                     Mes principales difficultés ont été la découverte du langage JavaScript ainsi que la compréhension des fonctions, qui étaient particulièrement difficiles pour moi.
                 </p>
-                <button className="flex-0.5 bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3 my-3 focus:bg-amber-600 text-center" >
-                    <a href="https://github.com/gabriel-mockers-nws/Mini-projets" target="_blank">
-                    Lien du projet&nbsp;
-                    </a> 
-                    <i className="fa-brands fa-github"/>
-                </button>
+                <Button href={"https://github.com/gabriel-mockers-nws/Mini-projets"} target="_blank">Lien du projet &nbsp;<i className="fa-brands fa-github"/></Button>
             </div>
         </div>
 
@@ -91,12 +77,7 @@ export const DevWeb = () => {
                     Mes principales difficultés rencontrées ont été la découverte de React ainsi que de Tailwind, me donnant un véritable défit à la réalisation de ce projet. <br /> 
                     J&apos;ai choisit ces deux framework pour leurs simplification du code, et du chargement des pages, la possibilité de les lier entres-elles, comme l&apos;atteste cette page projet. 
                 </p>
-                <button className="flex-0.5 bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3 my-3 focus:bg-amber-600 text-center" >
-                    <a href="https://github.com/gabriel-mockers-nws/Portfolio-Gmockers-vite" target="_blank">
-                    Lien du projet
-                    </a> 
-                    <i className="fa-solid fa-diagram-project"/>
-                </button>
+                <Button href={"https://github.com/gabriel-mockers-nws/Portfolio-Gmockers-vite"} target="_blank">Lien du projet &nbsp;<i className="fa-brands fa-github"/></Button>
             </div>
         </div>
         </>
