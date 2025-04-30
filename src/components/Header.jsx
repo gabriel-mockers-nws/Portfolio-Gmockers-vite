@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Button from "./Button";
 export const Header = () => {
     return (
         <>
@@ -27,9 +28,7 @@ export const Header = () => {
             <div className="bg-[url(./assets/img/Synthwave_Backgr.jpg)] bg-cover bg-center w-[90vw] h-[45vh] mt-1 mx-auto rounded-lg  flex flex-col items-center justify-center">
                 <h2 className="text-white text-5xl font-bold p-5"> Gabriel MOCKERS</h2>
                 <h4 className="text-white">Mon Portfolio</h4>
-                <button className="text-white bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3 m-1 focus:bg-amber-600" >
-                    <a href="https://github.com/gabriel-mockers-nws" target="_blank">Voir mon Github</a> <i className="fa-brands fa-github"/>
-                </button>
+                <Button href={"https://github.com/gabriel-mockers-nws"} target="_blank">Voir mon Github &nbsp;<i className="fa-brands fa-github"/></Button>
             </div>     
         </>
     );
