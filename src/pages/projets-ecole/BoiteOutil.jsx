@@ -1,4 +1,5 @@
 import SwiperCarousel from "../../components/SwiperCarousel";
+import Button from "../../components/Button";
 
 
 const ImagesToolBox = [
@@ -28,12 +29,7 @@ export const ToolBox = () => {
                 <p className="text-base leading-relaxed">
                     Pour le contôle HTML et CSS, nous avion à faire l&apos;intégration d&apos;une page web à part d&apos;une maquette figma fournie. Elle devais être faite au pixel perfect. <br /><em>note obtenue : 21/20</em>
                 </p>
-                <button className="flex-0.5 bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3 mx-2 focus:bg-amber-600 text-center" >
-                    <a href="https://www.canva.com/design/DAGba5z4tPo/X7pvPWmWuby2yWPIWkIPqg/edit" target="_blank">
-                    Lien du projet
-                    </a> 
-                    <i className="fa-solid fa-diagram-project"/>
-                </button>
+                <Button href={"https://www.canva.com/design/DAGba5z4tPo/X7pvPWmWuby2yWPIWkIPqg/edit"} target="_blank">Lien du projet &nbsp;<i className="fa-solid fa-diagram-project"/></Button>
             </div>
         </div>
 
