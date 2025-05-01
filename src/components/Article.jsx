@@ -12,13 +12,29 @@ export default function Article({
 }) {
   const flexDirection = reverse ? 'row-reverse' : 'row';
   const isCarousel = imageType === "carousel" && Array.isArray(images); // On vérifie si imageType est "carousel" et si images est un tableau
+  const isVideo = imageType === "video"; // Vérifie si c'est une vidéo YouTube
+  
+  // Assurez-vous que l'URL de la vidéo YouTube est bien formatée
+  const videoUrl = isVideo ? `https://www.youtube.com/embed/${images}` : null; // images contient l'ID de la vidéo YouTube
 
   return (
-    <div className={`flex flex-${flexDirection} items-center gap-6 my-8`}>
-      {/* Zone image ou carousel */}
+    <div className={`flex flex-${flexDirection} items-center gap-8 my-10 mx-12`}>
+      {/* Zone image, vidéo ou carousel */}
       <div className="w-[32%]">
         {isCarousel ? (
           <SwiperCarousel images={images} />
+        ) : isVideo ? (
+          // Intégration de l'iframe YouTube
+          <iframe
+            width="100%"
+            height="auto"
+            src={videoUrl}
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="w-full h-[27vh] object-cover"
+          />
         ) : (
           <img
             src={images}
@@ -29,8 +45,8 @@ export default function Article({
       </div>
 
       {/* Zone texte + boutons */}
-      <div className="w-[60%]">
-        <h4 className="text-xl font-semibold mb-2">{title}</h4>
+      <div className="w-[55%]">
+        <h4 className="text-xl font-semibold mb-8">{title}</h4>
         <div className="text-base leading-relaxed mb-4">{children}</div>
 
         {buttons.length > 0 && (
@@ -56,9 +72,9 @@ export default function Article({
 Article.propTypes = {
   title: PropTypes.string.isRequired,
   reverse: PropTypes.bool,
-  imageType: PropTypes.oneOf(["image", "carousel"]), // Ajout de l'imageType pour gérer le type d'affichage de l'image
+  imageType: PropTypes.oneOf(["image", "carousel", "video"]), // Ajout de "video" comme option
   images: PropTypes.oneOfType([
-    PropTypes.string,
+    PropTypes.string, // URL ou ID de la vidéo YouTube
     PropTypes.arrayOf(PropTypes.string),
   ]).isRequired,
   buttons: PropTypes.arrayOf(
