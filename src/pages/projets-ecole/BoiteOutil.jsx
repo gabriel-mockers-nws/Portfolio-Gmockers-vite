@@ -29,7 +29,8 @@ export const ToolBox = () => {
                 <p className="text-base leading-relaxed">
                     Pour le contôle HTML et CSS, nous avion à faire l&apos;intégration d&apos;une page web à part d&apos;une maquette figma fournie. Elle devais être faite au pixel perfect. <br /><em>note obtenue : 21/20</em>
                 </p>
-                <Button href={"https://www.canva.com/design/DAGba5z4tPo/X7pvPWmWuby2yWPIWkIPqg/edit"} target="_blank">Lien du projet &nbsp;<i className="fa-solid fa-diagram-project"/></Button>
+                <Button href={"https://github.com/gabriel-mockers-nws/controle-html-css"} isExternal>Lien du projet &nbsp;<i className="fa-brands fa-github"/></Button>&nbsp;
+                &nbsp;<Button href={"https://gabriel-mockers-nws.github.io/controle-html-css/"} isExternal>GitHub Pages &nbsp;<i className="fa-brands fa-github"/></Button>
             </div>
         </div>
 
@@ -46,7 +47,7 @@ export const ToolBox = () => {
         <div className="flex flex-row-reverse items-center gap-6 my-8">
             <SwiperCarousel images={ImagesToolBox} />
             <div  className="w-[60%]">
-                <h4 className="text-xl font-semibold mb-2">BDE Shop</h4>
+                <h4 className="text-xl font-semibold mb-2">Projet Photo</h4>
                 <p  className="text-base leading-relaxed">
                     Nous avions pour devoir de réaliser le site de vente du BDE de la Normandie Web school à partir de la maquette figma conçue auparavant &#40;voir projet UX/UI dans l&apos;onglet communication graphique&#41;. Le tout en respectant une charte graphique déjà existante. 
                 </p>
@@ -63,7 +64,7 @@ export const ToolBox = () => {
         allowFullScreen
         ></iframe>
             <div  className="w-[60%]">
-                <h4 className="text-xl font-semibold mb-2">Refonte du Site Handisup</h4>
+                <h4 className="text-xl font-semibold mb-2">Projet Vidéo</h4>
                 <p className="text-base leading-relaxed">
                     Ici, nous devions choisir un sujet de vidéo, créer la note d&apos;intention et le storyboard de la vidéo. <br />
                     Nous aions également dû la tournée, pour ce faire, choisir le lieu de tournage, la lumière, le son et tout ce qui doit être fait pour un petit court-métrage. <br />
