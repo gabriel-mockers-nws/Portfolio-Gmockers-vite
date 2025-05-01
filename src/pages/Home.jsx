@@ -1,3 +1,5 @@
+import Button from "../components/Button";
+
 export const Home = () => {
     return (
         <>
@@ -79,21 +81,15 @@ export const Home = () => {
                 </div>
             </div>
             <div className="flex justify-between items-center w-full px-10 py-5 mt-10 mb-15">
-                <button className="flex-0.5 bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3 mx-2 focus:bg-amber-600 text-center" >
-                    <a href="https://www.linkedin.com/in/gabriel-mockers/" target="_blank">Mon Linkedin</a> <i className="fa-brands fa-linkedin-in"/> 
-                </button>
 
-                <button className="flex-0.5 bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3 mx-2 focus:bg-amber-600 text-center" >
-                    <a href="https://github.com/gabriel-mockers-nws" target="_blank">Github</a> <i className="fa-brands fa-github"/>
-                </button>
+                <Button href={"https://www.linkedin.com/in/gabriel-mockers/"} isExternal>Mon Linkedin &nbsp; <i className="fa-brands fa-linkedin-in"/></Button>
 
-                <button className="flex-0.5  bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3 mx-2 focus:bg-amber-600 text-center" >
-                    <a href="mailto:gmockers@normandiewebschool.fr">Me contacter</a> <i className="fa-solid fa-envelope"/>
-                </button>
+                <Button href={"https://github.com/gabriel-mockers-nws"} isExternal>GitHub &nbsp; <i className="fa-brands fa-github"/></Button>
 
-                <button className="flex-0.5  bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3 mx-2 focus:bg-amber-600 text-center" >
-                    <a href="/images/myw3schoolsimage.jpg" target="_blank"download>Télécharger mon cv</a> <i className="fa-solid fa-file-arrow-down"/>
-                </button>
+                <Button href={"mailto:gmockers@normandiewebschool.fr"}>Me contacter &nbsp; <i className="fa-solid fa-envelope"/></Button>
+
+                <Button href={"/images/myw3schoolsimage.jpg"} isExternal>Télécharger mon CV &nbsp; <i className="fa-solid fa-file-arrow-down"/></Button>
+                
             </div>
             <div className="xl:px-10 xl:py-5">
                 <div className="py-2">
