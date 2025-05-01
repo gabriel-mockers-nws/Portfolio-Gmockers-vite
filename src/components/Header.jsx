@@ -28,7 +28,7 @@ export const Header = () => {
             <div className="bg-[url(./assets/img/Synthwave_Backgr.jpg)] bg-cover bg-center w-[90vw] h-[45vh] mt-1 mx-auto rounded-lg  flex flex-col items-center justify-center">
                 <h2 className="text-white text-5xl font-bold p-5"> Gabriel MOCKERS</h2>
                 <h4 className="text-white">Mon Portfolio</h4>
-                <Button href={"https://github.com/gabriel-mockers-nws"} target="_blank">Voir mon Github &nbsp;<i className="fa-brands fa-github"/></Button>
+                <Button href={"https://github.com/gabriel-mockers-nws"} isExternal>Voir mon Github &nbsp;<i className="fa-brands fa-github"/></Button>
             </div>     
         </>
     );
