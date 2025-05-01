@@ -29,13 +29,13 @@ export const ToolBox = () => {
             buttons={[
                 {
                 label: "Voir le projet",
-                href: "hhttps://github.com/gabriel-mockers-nws/controle-html-css",
+                href: "https://github.com/gabriel-mockers-nws/controle-html-css",
                 iconClass: "fa-brands fa-github",
                 isExternal: true
                 },
                 {
                 label: "GitHub Pages",
-                href: "ttps://gabriel-mockers-nws.github.io/controle-html-css/",
+                href: "https://gabriel-mockers-nws.github.io/controle-html-css/",
                 iconClass: "fa-brands fa-github",
                 isExternal: true
                 }
