@@ -44,7 +44,6 @@ export const ToolBox = () => {
                 Pour le contôle HTML et CSS, nous avion à faire l&apos;intégration d&apos;une page web à part d&apos;une maquette figma fournie. Elle devais être faite au pixel perfect. <br /><em>note obtenue : 21/20</em>
         </Article>
 
-
         <Article
             title="Refonte du Site Handisup"
             imageType="image"
@@ -62,22 +61,12 @@ export const ToolBox = () => {
             >
                 Nous avions pour devoir de réaliser le site de vente du BDE de la Normandie Web school à partir de la maquette figma conçue auparavant &#40;voir projet UX/UI dans l&apos;onglet communication graphique&#41;. Le tout en respectant une charte graphique déjà existante.
         </Article>
-        
-
 
         <Article
             title="Projet Vidéo"
             imageType="video" // Ici, on indique qu'il s'agit d'une vidéo YouTube
             images="NSnTVHA555c" // L'ID de la vidéo YouTube
             reverse={false}
-            buttons={[
-                {
-                label: "Voir sur YouTube",
-                href: "https://www.youtube.com/watch?v=NSnTVHA555c",
-                iconClass: "fa-solid fa-arrow-up-right-from-square",
-                isExternal: true,
-                },
-            ]}
             >
                 Ici, nous devions choisir un sujet de vidéo, créer la note d&apos;intention et le storyboard de la vidéo. <br />
                 Nous aions également dû la tournée, pour ce faire, choisir le lieu de tournage, la lumière, le son et tout ce qui doit être fait pour un petit court-métrage. <br />
