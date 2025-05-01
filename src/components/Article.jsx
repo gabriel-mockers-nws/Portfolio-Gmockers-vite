@@ -46,7 +46,7 @@ export default function Article({
 
       {/* Zone texte + boutons */}
       <div className="w-[55%]">
-        <h4 className="text-xl font-semibold mb-8">{title}</h4>
+        <h4 className="text-xl font-semibold mb-8 font-inter">{title}</h4>
         <div className="text-base leading-relaxed mb-4">{children}</div>
 
         {buttons.length > 0 && (
