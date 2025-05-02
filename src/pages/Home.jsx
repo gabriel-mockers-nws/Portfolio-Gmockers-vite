@@ -19,7 +19,7 @@ export const Home = () => {
                 </button>
                 </div>
                 <div className="w-1/2 flex justify-end">
-                <img src="/photo-profil.jpg" alt="Gabriel" className="rounded-lg  "/>
+                <img src="img/photo-profil.jpg" alt="Gabriel" className="rounded-lg  "/>
                 </div>
             </div>
 
@@ -89,7 +89,7 @@ export const Home = () => {
                 <Button href={"mailto:gmockers@normandiewebschool.fr"}>Me contacter &nbsp; <i className="fa-solid fa-envelope"/></Button>
 
                 <Button href={"/images/myw3schoolsimage.jpg"} isExternal>Télécharger mon CV &nbsp; <i className="fa-solid fa-file-arrow-down"/></Button>
-                
+
             </div>
             <div className="xl:px-10 xl:py-5">
                 <div className="py-2">
