@@ -6,7 +6,7 @@ export const Header = () => {
             <div>
                 <nav className="pt-4 mx-1.5 flex items-center justify-between font-Orbitron">
                     <div className="ml-4">
-                        <img src="img/logo-GM.png" alt="Mon logo" className="max-h-15 mx-3 my-2"/>
+                        <img src="./img/logo-GM.png" alt="Mon logo" className="max-h-15 mx-3 my-2"/>
                     </div>
                     
                     <div className="space-x-6">
