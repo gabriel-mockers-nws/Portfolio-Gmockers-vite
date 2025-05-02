@@ -102,7 +102,7 @@ export const Home = () => {
                         <p className="text-sm  xl:py-3">
                             Mon profolio en react et vite
                         </p>
-                        <img src="/projets/DevWeb/vite+react.png" alt="projet-vite-react" className="h-[27vh] w-[60vh] " />
+                        <img src="/img/Developpement/vite+react.png" alt="projet-vite-react" className="h-[27vh] w-[60vh] " />
                     </div>
 
                     <div>
@@ -110,7 +110,7 @@ export const Home = () => {
                         <p className="text-sm xl:py-3">
                             Soundspire est un projet d&apos;école réalisé en groupe.
                         </p>
-                        <img src="/projets/BoiteOutil/soundspire.png" alt="home-soundspire" className="h-[27vh] w-[60vh] " />
+                        <img src="/img/Developpement/soundspire.png" alt="home-soundspire" className="h-[27vh] w-[60vh] " />
                     </div>
 
                     <div>
