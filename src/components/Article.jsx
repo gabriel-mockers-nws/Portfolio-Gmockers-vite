@@ -10,7 +10,6 @@ export default function Article({
   buttons = [],
   children,
 }) {
-  const flexDirection = reverse ? 'row-reverse' : 'row';
   const isCarousel = imageType === "carousel" && Array.isArray(images); // On vérifie si imageType est "carousel" et si images est un tableau
   const isVideo = imageType === "video"; // Vérifie si c'est une vidéo YouTube
   
@@ -18,7 +17,7 @@ export default function Article({
   const videoUrl = isVideo ? `https://www.youtube.com/embed/${images}` : null; // images contient l'ID de la vidéo YouTube
 
   return (
-    <div className={`flex flex-${flexDirection} items-center gap-8 my-10 mx-12`}>
+    <div className={`flex ${reverse ? 'flex-row-reverse' : 'flex-row'} items-center gap-8 my-10 mx-12`}>
       {/* Zone image, vidéo ou carousel */}
       <div className="w-[32%]">
         {isCarousel ? (
