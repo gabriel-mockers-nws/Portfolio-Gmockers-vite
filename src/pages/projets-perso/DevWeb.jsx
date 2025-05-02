@@ -43,7 +43,6 @@ export const DevWeb = () => {
                 Ce projet à été fait en suivant un cours sur internet <em>&#40;Grafikart HTML&#41;</em>. Cela m&apos;a permis de comprendre les bases de ces deux langages et la construction d&apos;un site web.
         </Article>
 
-    
         <Article
             title="Confirmation HTML et CSS"
             imageType="carousel"
