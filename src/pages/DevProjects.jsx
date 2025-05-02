@@ -179,7 +179,7 @@ export const DevProjects = () => {
         </Article>
 
         <Article
-            title="Entrainement au JavaScript"
+            title="Portage de mon portfolio"
             imageType="image"
             images="/img/Developpement/vite+react.png"
             reverse={true}
