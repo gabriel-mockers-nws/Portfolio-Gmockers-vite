@@ -1,68 +1,51 @@
-import { useState } from "react";
-import ToolBox from "./projets-ecole/BoiteOutil";
-import ComGraph from "./projets-ecole/ComGraph";
-import ComWeb from "./projets-ecole/ComWeb";
-import Marketing from "./projets-ecole/Marketing";
-import DevWeb from "./projets-perso/DevWeb";
-import Pics from "./projets-perso/Photo";
+import Article from "../components/Article";
 
-export const Projects = () => {
-  const [activeBox, setActiveBox] = useState("ecole");
-  const [activeProject, setActiveProject] = useState("BoiteOutil");
-
-  const renderProjectComponent = () => {
-    switch (activeProject) {
-      case "BoiteOutil":
-        return <ToolBox />;
-      case "ComGraph":
-        return <ComGraph />;
-      case "ComWeb":
-        return <ComWeb />;
-      case "Marketing":
-        return <Marketing />;
-      case "DevWeb":
-        return <DevWeb />;
-      case "Photo":
-        return <Pics />;
-    }
-  };
-
+export const Projects = () => {;
   return (
-    <div className="p-4">
-
-      <div className="flex gap-4 mb-6">
-        <button
-          className={`cursor-pointer px-4 py-2 rounded ${activeBox === "ecole" ? "bg-orange-400 text-white" : "bg-gray-200 text-black"}`}
-          onClick={() => setActiveBox("ecole")}
+    <>
+    <Article
+        title="Projets déveleppement web"
+        imageType="image"
+        images="/img/Developpement/vite+react.png"
+        reverse={false}
+        buttons={[
+            {
+            label: "Voir le projet",
+            href: "https://github.com/gabriel-mockers-nws/Portfolio-Gmockers-vite",
+            iconClass: "fa-brands fa-github",
+            isExternal: true
+            },
+            {
+              label: "Voir plus de projets developpement",
+              href: "/DevProjects",
+              }
+        ]}
         >
-          Projets École
-        </button>
-        <button
-          className={`cursor-pointer px-4 py-2 rounded ${activeBox === "perso" ? "bg-green-500 text-white" : "bg-gray-200 text-black" }`}
-          onClick={() => setActiveBox("perso")}
+          Dans cete partie je ous présente tous mes projet de développement web. <br /> 
+    </Article>
+
+    <Article
+        title="Mes autres projets"
+        imageType="image"
+        images="/projets/Marketing/action-marketing.png"
+        reverse={true}
+        buttons={[
+            {
+            label: "Voir le projet",
+            href: "https://www.canva.com/design/DAGba5z4tPo/X7pvPWmWuby2yWPIWkIPqg/edit",
+            iconClass: "fa-solid fa-diagram-project",
+            isExternal: true
+            },
+            {
+              label: "Voir plus d'autres projets",
+              href: "/OtherProjects",
+            }
+        ]}
         >
-          Projets Personnels
-        </button>
-      </div>
+            Dans cette partie je vous présente tous mes autres projets qui sont principalement des projet d&apos;école. <br />
+    </Article>
 
-      {activeBox === "ecole" && (
-        <div className="space-x-4 mb-4 text-center place-content-between">
-          <button onClick={() => setActiveProject("BoiteOutil")} className={`cursor-pointer px-2 py-1 transition duration-200 ${activeProject === "BoiteOutil" ? "text-orange-400 font-semibold" : "text-gray-50 hover:text-orange-300 hover:underline underline-offset-2" }`}>Boite à outil numérique</button>
-          <button onClick={() => setActiveProject("ComGraph")} className={`cursor-pointer px-2 py-1 transition duration-200 ${activeProject === "ComGraph" ? "text-orange-400 font-semibold" : "text-gray-50 hover:text-orange-300 hover:underline underline-offset-2" }`}>Communication Graphique</button>
-          <button onClick={() => setActiveProject("ComWeb")} className={`cursor-pointer px-2 py-1 transition duration-200 ${activeProject === "ComWeb" ? "text-orange-400 font-semibold" : "text-gray-50 hover:text-orange-300 hover:underline underline-offset-2" }`}>Communication Web</button>
-          <button onClick={() => setActiveProject("Marketing")} className={`cursor-pointer px-2 py-1 transition duration-200 ${activeProject === "Marketing" ? "text-orange-400 font-semibold" : "text-gray-50 hover:text-orange-300 hover:underline underline-offset-2" }`}>Marketing</button>
-        </div>
-      )}
-
-      {activeBox === "perso" && (
-        <div className="space-x-4 mb-4 text-center place-content-between">
-          <button onClick={() => setActiveProject("DevWeb")} className={`cursor-pointer px-2 py-1 transition duration-200 ${activeProject === "DevWeb" ? "text-orange-400 font-semibold" : "text-gray-50 hover:text-orange-300 hover:underline underline-offset-2" }`}>Développement Web</button>
-          <button onClick={() => setActiveProject("Photo")} className={`cursor-pointer px-2 py-1 transition duration-200 ${activeProject === "Photo" ? "text-orange-400 font-semibold" : "text-gray-50 hover:text-orange-300 hover:underline underline-offset-2" }`}>Photographie</button>
-        </div>
-      )}
-
-      <div className="mt-6">{renderProjectComponent()}</div>
-    </div>
+    </>
   );
 };
 
