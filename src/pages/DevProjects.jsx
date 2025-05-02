@@ -179,10 +179,29 @@ export const DevProjects = () => {
         </Article>
 
         <Article
+            title="Entrainement au JavaScript"
+            imageType="image"
+            images="/img/Developpement/vite+react.png"
+            reverse={true}
+            buttons={[
+                {
+                label: "Voir le projet",
+                href: "https://github.com/gabriel-mockers-nws/Portfolio-Gmockers-vite",
+                iconClass: "fa-brands fa-github",
+                isExternal: true
+                }
+            ]}
+            >
+                Ceci est mon projet de fin d&apos;année, il s&apos;agit de la construction de ce porfolio, en utilisant la tecnhologie React et Vite. <br />
+                Pour le style, j&apos;ai choisit d&apos;utiliser Tailwind CSS, qui est un framework CSS. <br />
+                Comme base, j&apos;ai utiliser mon précédent protfolio qui avait été réalisé avec Wordpress, en y ajoutant mon univers, le retro et synthwave. 
+        </Article>
+
+        <Article
             title="Refonte du Site Handisup"
             imageType="image"
             images="/projets/BoiteOutil/handisup.png"
-            reverse={true}
+            reverse={false}
             >
                 Pour ce projet réalisé en groupe, nous devions refaire le site d&apos;handisup qui était vieillissant. N&apos;étant plus déctualité, il était donc convenue de le moderniser en gardant en idée l&apos;accessibilité et les informations principales demandées par le client. Pour ce faire nous avons utiliser WordPress
         </Article>
