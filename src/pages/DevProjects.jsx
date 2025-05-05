@@ -1,4 +1,5 @@
-import Article from "../components/Article"; 
+import Article from "../components/Article";
+import Button from "../components/Button";
 
 const LeBonpoil = [
     "/img/Developpement/Le-bon-poil/mainpage1.png",
@@ -205,6 +206,10 @@ export const DevProjects = () => {
             >
                 Pour ce projet réalisé en groupe, nous devions refaire le site d&apos;handisup qui était vieillissant. N&apos;étant plus déctualité, il était donc convenue de le moderniser en gardant en idée l&apos;accessibilité et les informations principales demandées par le client. Pour ce faire nous avons utiliser WordPress
         </Article>
+
+        <div className="flex justify-center my-10">
+            <Button href={"/projet"}>Revenir à la page projets</Button>
+        </div>
 
 
         </>
