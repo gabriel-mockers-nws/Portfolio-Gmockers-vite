@@ -21,7 +21,7 @@ export const Projects = () => {;
               }
         ]}
         >
-          Dans cete partie je ous présente tous mes projet de développement web. <br /> 
+          Dans cette partie je vous présente tous mes projet de développement web. <br /> 
     </Article>
 
     <Article
