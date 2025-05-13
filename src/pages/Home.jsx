@@ -14,9 +14,7 @@ export const Home = () => {
                         Alors, n&apos;ayez plus d&apos;hésitation et consultez mon site pour découvrir mes projets, 
                         mais aussi mes passions et centres d&apos;intérêts. Je suis certain que nous en partageons quelques-uns !
                     </p>
-                    <button className="flex-0.5  bg-orange-400 rounded-full hover:bg-orange-500 px-8 py-3  focus:bg-amber-600 text-center" >
-                    <a href="/images/myw3schoolsimage.jpg" target="_blank"download>Télécharger mon cv</a> <i className="fa-solid fa-file-arrow-down"/>
-                </button>
+                    <Button href={"/images/myw3schoolsimage.jpg"} isExternal>Télécharger mon CV &nbsp; <i className="fa-solid fa-file-arrow-down"/></Button>
                 </div>
                 <div className="w-1/2 flex justify-end">
                 <img src="img/photo-profil.jpg" alt="Gabriel" className="rounded-lg  "/>
