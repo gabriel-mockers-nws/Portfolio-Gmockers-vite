@@ -18,6 +18,9 @@ export const Header = () => {
                         <Link to="/projet" className="p-3  hover:text-orange-400 transition-colors duration-300 ease-in-out">
                             Projets
                         </Link>
+                        <Link to="/Contact" className="p-3  hover:text-orange-400 transition-colors duration-300 ease-in-out">
+                            Me contacter
+                        </Link>
                     </div>
                 </nav>
             </div>
