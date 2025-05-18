@@ -116,7 +116,7 @@ export const Home = () => {
                         <p className="text-sm xl:py-3">
                             Compréhension & réalisation de projet publicitaire pour une marque.
                         </p>
-                        <img src="/projets/Marketing/action-marketing.png" alt="presentation-support" className="h-[27vh] w-[60vh] "/>
+                        <img src="/img/OtherProjects/action-marketing.png" alt="presentation-support" className="h-[27vh] w-[60vh] "/>
                     </div>
 
                 </div>

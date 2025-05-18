@@ -2,15 +2,15 @@ import Article from "../components/Article";
 import Button from "../components/Button";
 
 const ImagesToolBox = [
-    "/projets/BoiteOutil/projet-photo/face.JPG",
-    "/projets/BoiteOutil/projet-photo/profil.JPG",
+    "/img/OtherProjects/projet-photo/face.JPG",
+    "/img/OtherProjects/projet-photo/profil.JPG",
 ];
 
 const ImagesUX_UI = [
-    "/projets/ComGraph/BDEShop/maquette.png",
-    "/projets/ComGraph/BDEShop/BDEShopD1.png",
-    "/projets/ComGraph/BDEShop/BDEShopM1.png",
-    "/projets/ComGraph/BDEShop/BDEShopM2.png",
+    "/img/OtherProjects/BDEShop/maquette.png",
+    "/img/OtherProjects/BDEShop/BDEShopD1.png",
+    "/img/OtherProjects/BDEShop/BDEShopM1.png",
+    "/img/OtherProjects/BDEShop/BDEShopM2.png",
 ];
 
 export const OtherProjects = () => {
@@ -49,7 +49,7 @@ export const OtherProjects = () => {
         <Article
             title="Persona"
             imageType="image"
-            images="/projets/Marketing/Persona.svg"
+            images="/img/OtherProjects/Persona.svg"
             reverse={true}
             >
                 Ce projet représente la création d&apos;un persona, la compréhension des attentes d&apos;une cible, connaitre ses besoins, ses craintes, et comment bien la représenter pour adapter notre campagne de communication.
@@ -58,7 +58,7 @@ export const OtherProjects = () => {
         <Article
             title="Action Marketing"
             imageType="image"
-            images="/projets/Marketing/action-marketing.png"
+            images="/img/OtherProjects/action-marketing.png"
             reverse={false}
             buttons={[
                 {
@@ -75,7 +75,7 @@ export const OtherProjects = () => {
         <Article
             title="BDE Shop"
             imageType="image"
-            images="/projets/Marketing/BDEShopD3.png"
+            images="/img/OtherProjects/BDEShopD3.png"
             reverse={true}
             >
                 Nous avions pour devoir de réaliser le site de vente du BDE de la Normandie Web school à partir de la maquette figma conçue auparavant &#40;voir projet UX/UI dans l&apos;onglet communication graphique&#41;. Le tout en respectant une charte graphique déjà existante.

@@ -201,7 +201,7 @@ export const DevProjects = () => {
         <Article
             title="Refonte du Site Handisup"
             imageType="image"
-            images="/projets/BoiteOutil/handisup.png"
+            images="/img/Developpement/handisup.png"
             reverse={false}
             >
                 Pour ce projet réalisé en groupe, nous devions refaire le site d&apos;handisup qui était vieillissant. N&apos;étant plus déctualité, il était donc convenue de le moderniser en gardant en idée l&apos;accessibilité et les informations principales demandées par le client. Pour ce faire nous avons utiliser WordPress
