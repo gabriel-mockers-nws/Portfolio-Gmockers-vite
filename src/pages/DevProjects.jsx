@@ -134,7 +134,7 @@ export const DevProjects = () => {
         </Article>
 
         <Article
-            title="Contrôle HTML et CSS"
+            title="Exercice pour un stage"
             imageType="image"
             images="/img/Developpement/exercice-stage.png"
             reverse={true}
