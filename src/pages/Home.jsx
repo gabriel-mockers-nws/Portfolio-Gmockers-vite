@@ -84,7 +84,7 @@ export const Home = () => {
 
                 <Button href={"https://github.com/gabriel-mockers-nws"} isExternal>GitHub &nbsp; <i className="fa-brands fa-github"/></Button>
 
-                <Button href={"mailto:gmockers@normandiewebschool.fr"}>Me contacter &nbsp; <i className="fa-solid fa-envelope"/></Button>
+                <Button href={"/Contact"}>Me contacter &nbsp; <i className="fa-solid fa-envelope"/></Button>
 
                 <Button href={"/images/myw3schoolsimage.jpg"} isExternal>Télécharger mon CV &nbsp; <i className="fa-solid fa-file-arrow-down"/></Button>
 
