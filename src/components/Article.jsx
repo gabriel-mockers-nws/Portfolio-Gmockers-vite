@@ -17,9 +17,10 @@ export default function Article({
   const videoUrl = isVideo ? `https://www.youtube.com/embed/${images}` : null; // images contient l'ID de la vidéo YouTube
 
   return (
-    <div className={`flex ${reverse ? 'flex-row-reverse' : 'flex-row'} items-center gap-8 my-10 mx-12`}>
+    <div className={`flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-8 my-10 mx-4 md:mx-12`}>
       {/* Zone image, vidéo ou carousel */}
-      <div className="w-[32%]">
+      <div className="w-full md:w-[40%] flex justify-center">
+
         {isCarousel ? (
           <SwiperCarousel images={images} />
         ) : isVideo ? (
@@ -29,27 +30,26 @@ export default function Article({
             height="auto"
             src={videoUrl}
             title="YouTube video player"
-            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            className="w-full h-[27vh] object-cover"
+            className="w-full h-[27vh] object-cover rounded-lg shadow-lg "
           />
         ) : (
           <img
             src={images}
             alt={title}
-            className="h-[27vh] w-[60vh] object-cover"
+            className="h-[27vh] w-[60vh] object-cover rounded-lg shadow-lg"
           />
         )}
       </div>
 
       {/* Zone texte + boutons */}
-      <div className="w-[55%]">
+      <div className="w-full md:w-[60%] text-center md:text-left">
         <h4 className="text-xl font-semibold mb-8 font-inter">{title}</h4>
         <div className="text-base leading-relaxed mb-4">{children}</div>
 
         {buttons.length > 0 && (
-          <div className="flex gap-4 flex-wrap">
+          <div className="flex gap-4 flex-wrap md:justify-start justify-center">
             {buttons.map((btn, i) => (
               <Button
                 key={i}
