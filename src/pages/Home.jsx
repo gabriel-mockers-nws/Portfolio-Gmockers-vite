@@ -14,7 +14,7 @@ export const Home = () => {
                         Alors, n&apos;ayez plus d&apos;hésitation et consultez mon site pour découvrir mes projets, 
                         mais aussi mes passions et centres d&apos;intérêts. Je suis certain que nous en partageons quelques-uns !
                     </p>
-                    <Button href={"/images/myw3schoolsimage.jpg"} isExternal>Télécharger mon CV &nbsp; <i className="fa-solid fa-file-arrow-down"/></Button>
+                    <Button href={"/pdf/CV-Mockers-Gabriel-développement-et-intégration-web.pdf"} isExternal>Télécharger mon CV &nbsp; <i className="fa-solid fa-file-arrow-down"/></Button>
                 </div>
                 <div className="w-1/2 flex justify-end">
                 <img src="img/photo-profil.jpg" alt="Gabriel" className="rounded-lg  "/>
@@ -89,38 +89,49 @@ export const Home = () => {
                 <Button href={"/images/myw3schoolsimage.jpg"} isExternal>Télécharger mon CV &nbsp; <i className="fa-solid fa-file-arrow-down"/></Button>
 
             </div>
-            <div className="xl:px-10 xl:py-5">
-                <div className="py-2">
-                    <h3 className="text-3xl font-bold mb-6 underline underline-offset-15 font-Orbitron">Aperçu de mes projets</h3>
-                    <p>Voici un petit aperçu de mes projets école et personnels</p>
+            <div className="px-4 py-8 xl:px-10 xl:py-10">
+                <div className="py-2 text-center">
+                    <h3 className="text-3xl font-bold mb-4 underline underline-offset-4 font-Orbitron">
+                    Aperçu de mes projets
+                    </h3>
+                    <p className="text-base">Voici un petit aperçu de mes projets école et personnels</p>
                 </div>
-                <div className="xl:grid xl:grid-cols-3 gap-8 lg:flex text-center xl:px-10 xl:py-5">
+
+                <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 mt-8 text-center">
                     <div>
-                        <h4 className="text-xl font-semibold mb-2">Portage portfolio en React</h4>
-                        <p className="text-sm  xl:py-3">
-                            Mon profolio en react et vite
-                        </p>
-                        <img src="/img/Developpement/vite+react.png" alt="projet-vite-react" className="h-[27vh] w-[60vh] " />
+                    <h4 className="text-xl font-semibold mb-2">Portage portfolio en React</h4>
+                    <p className="text-sm mb-4">Mon portfolio en React et Vite</p>
+                    <img
+                        src="/img/Developpement/vite+react.png"
+                        alt="projet-vite-react"
+                        className="h-[27vh] w-[60vh] mx-auto"
+                    />
                     </div>
 
                     <div>
-                        <h4 className="text-xl font-semibold mb-2">Soundspire</h4>
-                        <p className="text-sm xl:py-3">
-                            Soundspire est un projet d&apos;école réalisé en groupe.
-                        </p>
-                        <img src="/img/Developpement/soundspire.png" alt="home-soundspire" className="h-[27vh] w-[60vh] " />
+                    <h4 className="text-xl font-semibold mb-2">Soundspire</h4>
+                    <p className="text-sm mb-4">Soundspire est un projet d&apos;école réalisé en groupe.</p>
+                    <img
+                        src="/img/Developpement/soundspire.png"
+                        alt="home-soundspire"
+                        className="h-[27vh] w-[60vh] mx-auto"
+                    />
                     </div>
 
                     <div>
-                        <h4 className="text-xl font-semibold mb-2">Action Marketing</h4>
-                        <p className="text-sm xl:py-3">
-                            Compréhension & réalisation de projet publicitaire pour une marque.
-                        </p>
-                        <img src="/img/OtherProjects/action-marketing.png" alt="presentation-support" className="h-[27vh] w-[60vh] "/>
+                    <h4 className="text-xl font-semibold mb-2">Action Marketing</h4>
+                    <p className="text-sm mb-4">
+                        Compréhension & réalisation de projet publicitaire pour une marque.
+                    </p>
+                    <img
+                        src="/img/OtherProjects/action-marketing.png"
+                        alt="presentation-support"
+                        className="h-[27vh] w-[60vh] mx-auto"
+                    />
                     </div>
-
                 </div>
             </div>
+
         </>
     );
 };
