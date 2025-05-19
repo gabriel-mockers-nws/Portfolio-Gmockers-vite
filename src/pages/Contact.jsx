@@ -1,4 +1,6 @@
 import { useRef, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { sendEmail } from '../utils/SendEmail';
 import Button from '../components/Button';
 
 export const ContactForm = () => {
@@ -7,41 +9,59 @@ export const ContactForm = () => {
   const [emailValue, setEmailValue] = useState('');
   const [messageValue, setMessageValue] = useState('');
   const [nameValue, setNameValue] = useState('');
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Petite regex magique 🧙‍♂️ pour valider les emails
     const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue);
 
-    if (!emailValue || !messageValue) {
-      setError("Remplissez bien tous les champs.");
+    if (!nameValue || !emailValue || !messageValue) {
+      setError("Tous les champs sont à remplir, veillez à bien les remplir.");
       return;
     }
 
     if (!isValidEmail) {
-      setError("Votre email est incomplet. Vérifiez qu’il est bien formé !");
+      setError("L'email rentré ne correspond pas à un email valide. Ne pas oublier '@' et .");
       return;
-    }
-
-    if (!nameValue || !emailValue || !messageValue) {
-        setError("Remplissez bien tous les champs.");
-        return;
     }
 
     setError('');
 
-    // sendEmail(
-    //   form,
-    //   () => alert("Message envoyé avec succès ! 🎉"),
-    //   (error) => alert("Oups ! Erreur : " + error.text)
-    // );
+    sendEmail(
+      form,
+      () => {
+        setShowSuccess(true);
+        setTimeout(() => setShowSuccess(false), 5000); // Cache le message après 5 secondes
+        setEmailValue('');
+        setMessageValue('');
+        setNameValue('');
+      },
+      (error) => {
+        console.error("Erreur lors de l'envoi :", error);
+        setError("erreur lors de l'envoi du message. Veuillez réessayer plus tard.");
+      }
+    );
   };
+
 
   return (
     <div className="flex justify-center items-center h-screen bg-gradient-to-r">
       <form ref={form} onSubmit={handleSubmit} noValidate className="p-8 bg-white/20 rounded-lg shadow-xl w-96">
         <h2 className="text-center text-white text-2xl mb-4">Contactez-moi</h2>
+
+         <AnimatePresence>
+          {showSuccess && (
+            <motion.p
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              className="mb-4 text-green-100 text-sm bg-green-500/40 p-2 rounded-md text-center"
+            >
+              Message envoyé avec succès ! Merci!
+            </motion.p>
+          )}
+        </AnimatePresence>
 
         {error && (
           <p className="mb-4 text-yellow-200 text-sm bg-red-500/40 p-2 rounded-md">
