@@ -42,11 +42,11 @@ export default function Button({ href, children, className = '', isExternal = fa
   }
 
   return (
-    <MotionWrapper>
+
       <button className={baseStyle} {...props}>
         {children}
       </button>
-    </MotionWrapper>
+
   );
 }
 
