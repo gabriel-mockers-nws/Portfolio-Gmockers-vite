@@ -8,20 +8,20 @@ import PropTypes from 'prop-types';
 
 export default function SwiperCarousel({ images }) {
     return (
-        <div className="w-[60vh] h-[27vh]">
+        <div className="w-[60vh] h-[27vh] rounded-lg shadow-lg">
             <Swiper
                 modules={[Navigation, Autoplay]}
                 navigation
                 autoplay={{ delay: 3000, disableOnInteraction: false }}
                 loop
-                className="h-full"
+                className="h-full rounded-lg shadow-lg"
             >
                 {images.map((src, i) => (
                     <SwiperSlide key={i}>
                         <img
                             src={src}
                             alt={`Image ${i + 1}`}
-                            className="w-full h-full object-contain"
+                            className="w-full h-full object-contain rounded-lg shadow-lg"
                         />
                     </SwiperSlide>
                 ))}
