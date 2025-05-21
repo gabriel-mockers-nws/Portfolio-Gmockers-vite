@@ -17,7 +17,7 @@ export default function Article({
   const videoUrl = isVideo ? `https://www.youtube.com/embed/${images}` : null; // images contient l'ID de la vidéo YouTube
 
   return (
-    <div className={`flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-8 my-10 mx-4 md:mx-12`}>
+    <div className={`flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-8 my-10 mx-4 md:mx-12`}> {/* Condition ternaire */} 
       {/* Zone image, vidéo ou carousel */}
       <div className="w-full md:w-[40%] flex justify-center">
 

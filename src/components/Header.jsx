@@ -25,7 +25,7 @@ export const Header = () => {
                 </nav>
             </div>
             <div>
-                <h1 className="text-orange-400 xl:text-8xl font-bold mx-9 font-Orbitron lg:text-5xl md:text-3xl">
+                <h1 className="text-orange-400 xl:text-8xl font-bold mx-9 font-Orbitron lg:text-5xl md:text-3xl sm:text-2xl">
                 <Typewriter
                     words={['Développeur Web']}
                     cursor
