@@ -17,14 +17,14 @@ export const Home = () => {
                     <Button href={"/pdf/CV-Mockers-Gabriel-développement-et-intégration-web .pdf"} isExternal>Télécharger mon CV &nbsp; <i className="fa-solid fa-file-arrow-down"/></Button>
                 </div>
                 <div className="w-1/2 flex justify-end">
-                <img src="img/photo-profil.jpg" alt="Gabriel" className="rounded-lg  "/>
+                <img src="img/photo-profil.jpg" alt="Gabriel" className="rounded-lg"/>
                 </div>
             </div>
 
             <div className="w-full py-5 px-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg mb-20">
                 <h3 className="text-3xl font-bold mb-6 underline underline-offset-15 font-Orbitron">Mes centres d&apos;intérêts</h3>
 
-                <div className="xl:grid xl:grid-cols-6 gap-8 lg:grid md:grid ">
+                <div className="xl:grid xl:grid-cols-2 gap-8 lg:grid md:grid ">
                     <div>
                         <h4 className="text-xl font-semibold mb-2">Voyages</h4>
                         <p className="text-sm">
