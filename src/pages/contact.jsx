@@ -72,7 +72,7 @@ export const ContactForm = () => {
         <input
           type="text"
           name="user_name"
-          placeholder="Votre nom complet"
+          placeholder="Votre nom / Entreprise *"
           className="w-full p-3 mb-4 text-white bg-white/30 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400"
           value={nameValue}
           onChange={(e) => setNameValue(e.target.value)}
@@ -81,7 +81,7 @@ export const ContactForm = () => {
         <input
           type="email"
           name="user_email"
-          placeholder="Votre email"
+          placeholder="Votre Email *"
           className="w-full p-3 mb-4 text-white bg-white/30 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400"
           value={emailValue}
           onChange={(e) => setEmailValue(e.target.value)}
@@ -89,7 +89,7 @@ export const ContactForm = () => {
 
         <textarea
           name="message"
-          placeholder="Votre message"
+          placeholder="Votre message *"
           className="w-full p-3 mb-4 text-white bg-white/30 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400"
           rows="4"
           value={messageValue}
