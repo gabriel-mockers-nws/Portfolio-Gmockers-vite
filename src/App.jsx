@@ -5,9 +5,9 @@ import  Footer  from "./components/Footer";
 import './styles.css'
 import Home from './pages/home';
 import Projects  from './pages/projet';
-import DevProjects from './pages/DevProjects';
-import OtherProjects  from './pages/OtherProjects';
-import ContactForm from './pages/Contact';
+import DevProjects from './pages/devProjects';
+import OtherProjects  from './pages/otherProjects';
+import ContactForm from './pages/contact';
 // const router = createBrowserRouter([
   
 // ])
@@ -23,10 +23,10 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' element={<Home />}/>
-          <Route path="/Projet/*" element={<Projects />}/>
-          <Route path='/DevProjects' element={<DevProjects/>}/>
-          <Route path='/OtherProjects' element={<OtherProjects/>}/>
-          <Route path='/Contact' element={<ContactForm/>}/>
+          <Route path="/projet/*" element={<Projects />}/>
+          <Route path='/devProjects' element={<DevProjects/>}/>
+          <Route path='/otherProjects' element={<OtherProjects/>}/>
+          <Route path='/contact' element={<ContactForm/>}/>
         </Routes>
         <Footer />
       </Router>
