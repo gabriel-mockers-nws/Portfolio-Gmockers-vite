@@ -49,7 +49,7 @@ export const OtherProjects = () => {
         <Article
             title="Persona"
             imageType="image"
-            images="/img/OtherProjects2/Persona.svg"
+            images="/img/OtherProjects/Persona.svg"
             reverse={true}
             >
                 Ce projet représente la création d&apos;un persona, la compréhension des attentes d&apos;une cible, connaitre ses besoins, ses craintes, et comment bien la représenter pour adapter notre campagne de communication.
