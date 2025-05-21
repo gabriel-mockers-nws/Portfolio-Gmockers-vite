@@ -12,7 +12,7 @@ export default function SwiperCarousel({ images }) {
             <Swiper
                 modules={[Navigation, Autoplay]}
                 navigation
-                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                autoplay={{ delay: 6000, disableOnInteraction: false }}
                 loop
                 className="h-full rounded-lg shadow-lg"
             >
