@@ -1,11 +1,16 @@
 import emailjs from '@emailjs/browser';
 
+const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
+
+
 export const sendEmail = (formRef, onSuccess, onError) => {
   emailjs.sendForm(
-    'service_jx86gpx',
-    'template_k1eto3q',
+    SERVICE_ID,
+    TEMPLATE_ID,
     formRef.current,
-    'qLC9fScPZt7oCKDr0'
+    PUBLIC_KEY
   )
   .then(onSuccess)
   .catch(onError);
