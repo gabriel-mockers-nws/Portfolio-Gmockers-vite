@@ -89,6 +89,7 @@ export const Home = () => {
                 <Button href={"/images/myw3schoolsimage.jpg"} isExternal>Télécharger mon CV &nbsp; <i className="fa-solid fa-file-arrow-down"/></Button>
 
             </div>
+
             <div className="px-4 py-8 xl:px-10 xl:py-10">
                 <div className="py-2 text-center">
                     <h3 className="text-3xl font-bold mb-4 underline underline-offset-4 font-Orbitron">
@@ -96,7 +97,7 @@ export const Home = () => {
                     </h3>
                     <p className="text-base">Voici un petit aperçu de mes projets école et personnels</p>
                 </div>
-
+                
                 <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 mt-8 text-center">
                     <div>
                     <h4 className="text-xl font-semibold mb-2">Portage portfolio en React</h4>
@@ -104,7 +105,7 @@ export const Home = () => {
                     <img
                         src="/img/Developpement/vite+react.png"
                         alt="projet-vite-react"
-                        className="h-[27vh] w-[60vh] mx-auto"
+                        className="h-[27vh] w-[60vh] mx-auto rounded-lg shadow-lg "
                     />
                     </div>
 
@@ -114,7 +115,7 @@ export const Home = () => {
                     <img
                         src="/img/Developpement/soundspire.png"
                         alt="home-soundspire"
-                        className="h-[27vh] w-[60vh] mx-auto"
+                        className="h-[27vh] w-[60vh] mx-auto rounded-lg shadow-lg "
                     />
                     </div>
 
@@ -126,7 +127,7 @@ export const Home = () => {
                     <img
                         src="/img/OtherProjects/action-marketing.png"
                         alt="presentation-support"
-                        className="h-[27vh] w-[60vh] mx-auto"
+                        className="h-[27vh] w-[60vh] mx-auto rounded-lg shadow-lg "
                     />
                     </div>
                 </div>
