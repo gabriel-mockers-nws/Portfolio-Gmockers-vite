@@ -36,7 +36,7 @@ export const Header = () => {
                 </h1>
 
             </div>
-            <div className="bg-[url(./assets/img/Synthwave_Backgr.jpg)] bg-cover bg-center w-[90vw] h-[45vh] mt-1 mx-auto rounded-lg  flex flex-col items-center justify-center">
+            <div className="bg-[url(./assets/img/Synthwave_Backgr.jpg)] bg-cover bg-center w-[90vw] h-[45vh] mt-1 mx-auto rounded-lg shadow-lg  flex flex-col items-center justify-center">
                 <h2 className="text-white text-5xl font-bold p-5"> 
                 <Typewriter
                     words={['Gabriel Mockers', 'Mon portfolio']}
