@@ -17,8 +17,8 @@ function App() {
 
   return (
 
-   <>
-       <div className=" inset-0 bg-[url('./assets/img/synth-bg.svg')] bg-cover bg-center bg-fixed relative">
+  <>
+    <div className="  bg-[url('./assets/img/synth-bg.svg')] bg-cover bg-center bg-no-repeat bg-fixed w-full min-h-screen">
       <Router>
         <Header />
         <Routes>
@@ -30,7 +30,7 @@ function App() {
         </Routes>
         <Footer />
       </Router>
-      </div> 
+    </div> 
   </>
   )
 }
