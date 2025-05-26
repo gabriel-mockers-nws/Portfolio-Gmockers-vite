@@ -81,7 +81,7 @@ export const OtherProjects = () => {
                 Nous avions pour devoir de réaliser le site de vente du BDE de la Normandie Web school à partir de la maquette figma conçue auparavant &#40;voir projet UX/UI dans l&apos;onglet communication graphique&#41;. Le tout en respectant une charte graphique déjà existante.
         </Article>
 
-         <div className="flex justify-center my-10">
+        <div className="flex justify-center my-10">
             <Button href={"/projet"}>Revenir à la page projets</Button>
         </div>
         </>

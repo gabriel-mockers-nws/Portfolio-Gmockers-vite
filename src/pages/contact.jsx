@@ -50,7 +50,7 @@ export const ContactForm = () => {
       <form ref={form} onSubmit={handleSubmit} noValidate className="p-8 bg-white/20 rounded-lg shadow-xl w-96">
         <h2 className="text-center text-white text-2xl mb-4">Contactez-moi</h2>
 
-         <AnimatePresence>
+        <AnimatePresence>
           {showSuccess && (
             <motion.p
               initial={{ opacity: 0, y: -20 }}
