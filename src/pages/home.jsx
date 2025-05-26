@@ -67,7 +67,7 @@ export const Home = () => {
                         <p className="text-sm">
                             Depuis maintenant trois ans, je prend énormément de plaisir à partager mes séances de jeux, ou tout simplement discuter sur la plateforme&nbsp;
                             <a href="https://www.twitch.tv/legiolf" className="font-bold underline hover:no-underline">Twitch</a>. Pour ce faire, j&apos;utilise un avatar
-                            de mon personnage à la place da la caméra pour animer mes streams. Le nom de ma chaine est mon pseudonyme, Legiolf.
+                            de mon personnage à la place da la caméra pour animer mes streams.
                         </p>
                     </div>
                     
