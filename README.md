@@ -4,6 +4,9 @@ Ce projet est le portage de mon porfolio déja existant en wordpress vers du cod
 
 Par ce portfolio je fait une présentation de qui je suis mais aussi mes compétences, mes projets, des liens seront présent pour mener au projet (Github, Canva, Figma...) 
 
+npm install framer-motion
+npm install react-simple-typewriter
+
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
