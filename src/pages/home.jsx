@@ -31,10 +31,10 @@ export const Home = () => {
             </div>
 
 
-            <div className="w-full py-5 px-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg mb-21">
+            <div className="w-full py-5 px-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg ">
                 <h3 className="text-3xl font-bold mb-6 underline underline-offset-15 font-Orbitron">Mes centres d&apos;intérêts</h3>
 
-                <div className="xl:grid xl:grid-cols-2 gap-8 lg:grid md:grid">
+                <div className="xl:grid xl:grid-cols-2 gap-10 lg:grid md:grid xl:px-10 xl:pr-20">
                     <div>
                         <h4 className="text-xl font-semibold mb-2">Voyages</h4>
                         <p className="text-sm">
@@ -88,7 +88,7 @@ export const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col items-center xl:flex-row xl:justify-between xl:mx-12">
+            <div className="flex flex-col items-center my-12 xl:flex-row xl:justify-between xl:mx-12 xl:my-25">
 
                 <Button href={"https://www.linkedin.com/in/gabriel-mockers/"} isExternal>Mon Linkedin &nbsp; <i className="fa-brands fa-linkedin-in"/></Button>
 
