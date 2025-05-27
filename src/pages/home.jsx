@@ -31,10 +31,10 @@ export const Home = () => {
             </div>
 
 
-            <div className="w-full py-5 px-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg mb-20">
+            <div className="w-full py-5 px-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg mb-21">
                 <h3 className="text-3xl font-bold mb-6 underline underline-offset-15 font-Orbitron">Mes centres d&apos;intérêts</h3>
 
-                <div className="xl:grid xl:grid-cols-2 gap-8 lg:grid md:grid ">
+                <div className="xl:grid xl:grid-cols-2 gap-8 lg:grid md:grid">
                     <div>
                         <h4 className="text-xl font-semibold mb-2">Voyages</h4>
                         <p className="text-sm">
@@ -88,7 +88,7 @@ export const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-between items-center w-full px-10 py-5 mt-10 mb-15">
+            <div className="flex flex-col items-center xl:flex-row xl:justify-between xl:mx-12">
 
                 <Button href={"https://www.linkedin.com/in/gabriel-mockers/"} isExternal>Mon Linkedin &nbsp; <i className="fa-brands fa-linkedin-in"/></Button>
 
@@ -140,6 +140,9 @@ export const Home = () => {
                         className="h-[27vh] w-[60vh] mx-auto rounded-lg shadow-lg "
                     />
                     </div>
+                </div>
+                <div className=" flex justify-center mt-10">
+                    <Button href={"/projet"}>Mes projets &nbsp; <i className="fa-solid fa-diagram-project"/></Button>
                 </div>
             </div>
 
