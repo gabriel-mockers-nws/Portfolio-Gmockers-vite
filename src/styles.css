@@ -8,6 +8,8 @@
     --font-inter: "Inter", sans-serif;
 }
 
+@custom-variant light (&:where(.light, .light *));
+
 .swiper-button-next,
 .swiper-button-prev {
   color: #fb923c !important; /* text-orange-400 */
