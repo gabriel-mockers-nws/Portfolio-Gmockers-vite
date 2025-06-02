@@ -8,19 +8,30 @@ import Projects  from './pages/projet';
 import DevProjects from './pages/devProjects';
 import OtherProjects  from './pages/otherProjects';
 import ContactForm from './pages/contact';
+import { useState, useEffect } from "react";
 // const router = createBrowserRouter([
   
 // ])
 
 function App() {
+  const [lightMode, setLightMode] = useState(false);
+  
+  useEffect(() => {
+    const html = document.documentElement;
+    if (lightMode) {
+      html.classList.add("light");
+    } else {
+      html.classList.remove("light");
+    }
+  }, [lightMode]);
 
 
   return (
 
   <>
-    <div className="  bg-[url('./assets/img/synth-bg.svg')] bg-cover bg-center bg-no-repeat bg-fixed w-full min-h-screen">
+    <div className="  bg-[url('./assets/img/synth-bg.svg')] light:bg-[url('./assets/img/synth-bg-light.svg')] bg-cover bg-center bg-no-repeat bg-fixed w-full min-h-screen">
       <Router>
-        <Header />
+        <Header lightMode={lightMode} setLightMode={setLightMode} />
         <Routes>
           <Route path='/' element={<Home />}/>
           <Route path="/projet/*" element={<Projects />}/>
