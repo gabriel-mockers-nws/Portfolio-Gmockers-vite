@@ -1,16 +1,21 @@
 import { Link } from "react-router-dom";
 import Button from "./Button";
 import { Typewriter } from 'react-simple-typewriter';
-export const Header = () => {
+import PropTypes from 'prop-types';
+export const Header = ({ lightMode, setLightMode }) => {
     return (
         <>
             <div>
                 <nav className="pt-4 mx-1.5 flex items-center justify-between font-Orbitron">
                     <div className="ml-4">
                         <img src="./img/logo-GM.png" alt="Mon logo" className="max-h-15 mx-3 my-2"/>
+                        
                     </div>
-                    
                     <div className="space-x-6">
+                        <button onClick={() => setLightMode(prev => !prev)} 
+                        className="bg-orange-400 hover:bg-orange-500  rounded-sm h-9 w-9 text-2xl">
+                            {lightMode ? "🌙" : "☀️"}
+                        </button>
                         <Link to="/" className="p-3  hover:text-orange-400 transition-colors duration-300 ease-in-out">
                             Accueil
                         </Link>
@@ -54,4 +59,8 @@ export const Header = () => {
     );
 
 }
+Header.propTypes = {
+    lightMode: PropTypes.bool.isRequired,
+    setLightMode: PropTypes.func.isRequired,
+};
 export default Header; 
