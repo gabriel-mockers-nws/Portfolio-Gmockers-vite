@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 export default function Button({ href, children, className = '', isExternal = false, ...props }) {
-  const baseStyle = `inline-flex items-center justify-center bg-orange-400 hover:bg-orange-500 text-white px-6 py-3 my-5 rounded-full transition-colors duration-300 ${className}`;
+  const baseStyle = `inline-flex items-center justify-center bg-orange-400 hover:bg-orange-500 light:bg-purple-500 light:hover:bg-purple-800 text-white px-6 py-3 my-5 rounded-full transition-colors duration-300 ${className}`;
 
   const MotionWrapper = ({ children }) => (
     <motion.div
