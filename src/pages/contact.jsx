@@ -73,7 +73,7 @@ export const ContactForm = () => {
           type="text"
           name="user_name"
           placeholder="Votre nom / Entreprise *"
-          className="w-full p-3 mb-4 text-white bg-white/30 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400"
+          className="w-full p-3 mb-4 text-white bg-white/30 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
           value={nameValue}
           onChange={(e) => setNameValue(e.target.value)}
         />
@@ -82,7 +82,7 @@ export const ContactForm = () => {
           type="email"
           name="user_email"
           placeholder="Votre Email *"
-          className="w-full p-3 mb-4 text-white bg-white/30 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400"
+          className="w-full p-3 mb-4 text-white bg-white/30 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
           value={emailValue}
           onChange={(e) => setEmailValue(e.target.value)}
         />
@@ -90,7 +90,7 @@ export const ContactForm = () => {
         <textarea
           name="message"
           placeholder="Votre message *"
-          className="w-full p-3 mb-4 text-white bg-white/30 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400"
+          className="w-full p-3 mb-4 text-white bg-white/30 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
           rows="4"
           value={messageValue}
           onChange={(e) => setMessageValue(e.target.value)}
