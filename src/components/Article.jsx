@@ -14,12 +14,12 @@ export default function Article({
   const isVideo = imageType === "video"; // Vérifie si c'est une vidéo YouTube
   
   // Assurez-vous que l'URL de la vidéo YouTube est bien formatée
-  const videoUrl = isVideo ? `https://www.youtube.com/embed/${images}` : null; // images contient l'ID de la vidéo YouTube
+  const videoUrl = isVideo ? `https://www.youtube.com/embed/${images}` : null; // ternaire
 
   return (
-    <div className={`flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-8 my-10 mx-4 md:mx-12`}> {/* Condition ternaire */} 
+    <div className={`flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-15 my-10 mx-4 md:mx-35`}> {/* Condition ternaire */} 
       {/* Zone image, vidéo ou carousel */}
-      <div className="w-full md:w-[40%] flex justify-center">
+      <div className="w-full md:w-[40%] flex justify-center my-20 overflow-visible">
 
         {isCarousel ? (
           <SwiperCarousel images={images} />
@@ -44,7 +44,7 @@ export default function Article({
       </div>
 
       {/* Zone texte + boutons */}
-      <div className="w-full md:w-[60%] text-center md:text-left">
+      <div className="w-full md:w-[65%] text-center md:text-left">
         <h4 className="text-xl font-semibold mb-8 font-inter">{title}</h4>
         <div className="text-base leading-relaxed mb-4">{children}</div>
 
@@ -71,9 +71,9 @@ export default function Article({
 Article.propTypes = {
   title: PropTypes.string.isRequired,
   reverse: PropTypes.bool,
-  imageType: PropTypes.oneOf(["image", "carousel", "video"]), // Ajout de "video" comme option
+  imageType: PropTypes.oneOf(["image", "carousel", "video"]), 
   images: PropTypes.oneOfType([
-    PropTypes.string, // URL ou ID de la vidéo YouTube
+    PropTypes.string, 
     PropTypes.arrayOf(PropTypes.string),
   ]).isRequired,
   buttons: PropTypes.arrayOf(
