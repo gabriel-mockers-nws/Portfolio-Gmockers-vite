@@ -31,7 +31,7 @@ export const Home = () => {
             </div>
 
 
-            <div className="w-full py-5 px-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg ">
+            <div className="w-full py-5 px-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg  light:bg-linear-to-r light:from-cyan-500 light:to-blue-500 ">
                 <h3 className="text-3xl font-bold mb-6 underline underline-offset-15 font-Orbitron">Mes centres d&apos;intérêts</h3>
 
                 <div className="xl:grid xl:grid-cols-2 gap-10 lg:grid md:grid xl:px-10 xl:pr-20">
