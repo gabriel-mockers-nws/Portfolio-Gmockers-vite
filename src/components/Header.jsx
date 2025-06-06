@@ -16,14 +16,14 @@ export const Header = ({ lightMode, setLightMode }) => {
                         className="bg-orange-400 hover:bg-orange-500 light:bg-purple-500 light:hover:bg-purple-800 rounded-sm h-9 w-9 text-2xl">
                             {lightMode ? "🌙" : "☀️"}
                         </button>
-                        <Link to="/" className="p-3  hover:text-orange-400 light:hover:text-purple-700 transition-colors duration-300 ease-in-out">
+                        <Link to="/" className="p-3  hover:text-orange-400 light:hover:text-purple-700 transition-colors duration-300 ease-in-out font-bold">
                             Accueil
                         </Link>
 
-                        <Link to="/projet" className="p-3  hover:text-orange-400 light:hover:text-purple-700 transition-colors duration-300 ease-in-out">
+                        <Link to="/projet" className="p-3  hover:text-orange-400 light:hover:text-purple-700 transition-colors duration-300 ease-in-out font-bold">
                             Projets
                         </Link>
-                        <Link to="/Contact" className="p-3  hover:text-orange-400 light:hover:text-purple-700 transition-colors duration-300 ease-in-out">
+                        <Link to="/Contact" className="p-3  hover:text-orange-400 light:hover:text-purple-700 transition-colors duration-300 ease-in-out font-bold">
                             Me contacter
                         </Link>
                     </div>
