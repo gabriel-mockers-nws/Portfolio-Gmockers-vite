@@ -8,25 +8,29 @@ import PropTypes from 'prop-types';
 
 export default function SwiperCarousel({ images }) {
     return (
-        <div className="w-[60vh] h-[27vh] rounded-lg shadow-lg">
-            <Swiper
-                modules={[Navigation, Autoplay]}
-                navigation
-                autoplay={{ delay: 6000, disableOnInteraction: false }}
-                loop
-                className="h-full rounded-lg shadow-lg"
-            >
-                {images.map((src, i) => (
-                    <SwiperSlide key={i}>
-                        <img
-                            src={src}
-                            alt={`Image ${i + 1}`}
-                            className="w-full h-full object-contain rounded-lg shadow-lg"
-                        />
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-        </div>
+        <>
+            <div className='md:w-[85vh] md:relative overflow-visible'>   
+                <div className="w-[60vh] h-[27vh] rounded-lg md:relative">
+                    <Swiper
+                        modules={[Navigation, Autoplay]}
+                        navigation
+                        autoplay={{ delay: 6000, disableOnInteraction: false }}
+                        loop
+                        className="h-full rounded-lg shadow-lg"
+                    >
+                        {images.map((src, i) => (
+                            <SwiperSlide key={i}>
+                                <img
+                                    src={src}
+                                    alt={`Image ${i + 1}`}
+                                    className="w-full h-full object-contain rounded-lg shadow-lg md:object-fill"
+                                />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
+            </div>
+        </>
     );
 }
 
