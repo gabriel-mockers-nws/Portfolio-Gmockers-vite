@@ -13,24 +13,24 @@ export const Header = ({ lightMode, setLightMode }) => {
                     </div>
                     <div className="space-x-6">
                         <button onClick={() => setLightMode(prev => !prev)} 
-                        className="bg-orange-400 hover:bg-orange-500  rounded-sm h-9 w-9 text-2xl">
+                        className="bg-orange-400 hover:bg-orange-500 light:bg-purple-500 light:hover:bg-purple-800 rounded-sm h-9 w-9 text-2xl">
                             {lightMode ? "🌙" : "☀️"}
                         </button>
-                        <Link to="/" className="p-3  hover:text-orange-400 transition-colors duration-300 ease-in-out">
+                        <Link to="/" className="p-3  hover:text-orange-400 light:hover:text-purple-700 transition-colors duration-300 ease-in-out">
                             Accueil
                         </Link>
 
-                        <Link to="/projet" className="p-3  hover:text-orange-400 transition-colors duration-300 ease-in-out">
+                        <Link to="/projet" className="p-3  hover:text-orange-400 light:hover:text-purple-700 transition-colors duration-300 ease-in-out">
                             Projets
                         </Link>
-                        <Link to="/Contact" className="p-3  hover:text-orange-400 transition-colors duration-300 ease-in-out">
+                        <Link to="/Contact" className="p-3  hover:text-orange-400 light:hover:text-purple-700 transition-colors duration-300 ease-in-out">
                             Me contacter
                         </Link>
                     </div>
                 </nav>
             </div>
             <div>
-                <h1 className="text-orange-400 xl:text-8xl font-bold mx-9 font-Orbitron lg:text-5xl md:text-3xl sm:text-2xl">
+                <h1 className="text-orange-400 light:text-orange-500 xl:text-8xl font-bold mx-9 font-Orbitron lg:text-5xl md:text-3xl sm:text-2xl">
                 <Typewriter
                     words={['Développeur Web']}
                     cursor
