@@ -13,6 +13,15 @@ const ImagesUX_UI = [
     "/img/OtherProjects/BDEShop/BDEShopM2.png",
 ];
 
+const LogoVectoriels = [
+    "/img/OtherProjects/logo-vectoriel/logo-vec-1.png",
+    "/img/OtherProjects/logo-vectoriel/logo-vec-2.png",
+    "/img/OtherProjects/logo-vectoriel/logo-vec-3.png",
+    "/img/OtherProjects/logo-vectoriel/logo-vec-4.png",
+    "/img/OtherProjects/logo-vectoriel/logo-vec-5.png",
+    "/img/OtherProjects/logo-vectoriel/logo-vec-6.png",
+];
+
 export const OtherProjects = () => {
     return (
         <>
@@ -79,6 +88,23 @@ export const OtherProjects = () => {
             reverse={true}
             >
                 Nous avions pour devoir de réaliser le site de vente du BDE de la Normandie Web school à partir de la maquette figma conçue auparavant &#40;voir projet UX/UI dans l&apos;onglet communication graphique&#41;. Le tout en respectant une charte graphique déjà existante.
+        </Article>
+
+        <Article
+            title="Logos Vectoriels"
+            imageType="carousel"
+            images={LogoVectoriels}
+            reverse={false}
+            >
+                Nous avons du apprendre à réaliser des logos en vectoriel, pour ce faire, nous avons utiliser Adobe Ilustrator. Nous devions réimaginer le logo de la Normandie Web School, Nous pouvions changer les couleurs et l&apos;identité graphique de l&apos;école. <br />
+                J&apos;ai choisi de représenter sous différentes formes : <br />
+                - Une première en m&apos;inspirant de l&apos;ancienne apparance de Google. <br />
+                - Une deuxième épurée, assez simple. <br />
+                - Une troisième avec une inspiration des formes et police dans les années 1970. <br />
+                - Une quatrième pour en faire un produit de Luxe. <br />
+                - Une cinquième qui en fait une apparence d&apos;une école plus enfantine, maternelle. <br />
+                - Une sixième en m&apos;inspirant des blasons médiéval. 
+
         </Article>
 
         <div className="flex justify-center my-10">
