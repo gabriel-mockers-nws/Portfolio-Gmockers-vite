@@ -13,4 +13,7 @@
 .swiper-button-next,
 .swiper-button-prev {
   color: #fb923c !important; /* text-orange-400 */
+  position: absolute;
+  top: 50%;
+  z-index: 10;
 }
