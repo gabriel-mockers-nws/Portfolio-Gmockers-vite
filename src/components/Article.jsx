@@ -5,7 +5,7 @@ import SwiperCarousel from './SwiperCarousel';
 export default function Article({
   title,
   reverse = false,
-  imageType = null, // Par défaut on affiche une image
+  imageType = 'image',
   images,
   buttons = [],
   children,
