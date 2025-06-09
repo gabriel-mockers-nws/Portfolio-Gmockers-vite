@@ -25,7 +25,7 @@ const LogoVectoriels = [
 export const OtherProjects = () => {
     return (
         <>
-        <h2 className="text-center m-19 text-3xl font-Orbitron font-black">Autres projets</h2>
+        <h3 className="text-center m-19 text-3xl font-Orbitron font-black">Autres projets</h3>
         <Article
             title="Projet Photo"
             imageType="carousel"

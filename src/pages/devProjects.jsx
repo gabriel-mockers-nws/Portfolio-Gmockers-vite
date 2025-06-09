@@ -28,7 +28,7 @@ const Stage = [
 export const DevProjects = () => {
     return (
         <>
-        <h2 className="text-center m-19 text-3xl font-Orbitron font-black">Projets développement</h2>
+        <h3 className="text-center m-19 text-3xl font-Orbitron font-black">Projets développement</h3>
         <Article
             title="Formation HTML et débuts CSS"
             imageType="carousel"
