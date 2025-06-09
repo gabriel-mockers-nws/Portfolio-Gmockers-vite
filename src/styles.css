@@ -17,3 +17,15 @@
   top: 50%;
   z-index: 10;
 }
+
+.list-circle > li {
+  list-style-type: circle;
+}
+
+.custom-list ul {
+  @apply list-disc ml-6;
+}
+
+.custom-list li {
+  @apply my-3;
+}
