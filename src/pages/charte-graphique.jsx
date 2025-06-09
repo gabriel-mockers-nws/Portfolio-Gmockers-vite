@@ -1,4 +1,5 @@
 import CharteArticle from "../components/CharteArticle"
+import LogoVariant from "../components/LogoVariant";
 
 export const CharteGraph = () => {
     return (
@@ -37,16 +38,42 @@ export const CharteGraph = () => {
             </CharteArticle>
 
             <CharteArticle
-            title="Typographie"
+                title="Typographie"
             >
                 <strong className="font-Orbitron font-black">Orbitron</strong> <br />
                 <p className="font-Orbitron">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus voluptas voluptate officia qui ipsum fugiat corporis magni veritatis quos accusantium.</p><br />
                 <br />
                 <strong className="font-inter">Inter</strong>
                 <p className="font-inter">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quo aliquam aperiam quae iure vero eligendi? Et ex sequi odit?</p>
-
             </CharteArticle>
 
+            <CharteArticle
+                title="Couleurs"
+                colors={[
+                    { hex: '#fb923c' },
+                    { hex: '#f97316' },
+                    { hex: '#a855f7,#ec4899', gradient: true }
+                ]}
+                >
+                Ici sont présentées les couleurs majoritairements présentes sur le site. 
+            </CharteArticle>
+
+            <LogoVariant
+                title="Variantes du logo"
+                variants={[
+                    { src: 'img/Logo-GM/logo.png', caption: 'Logo principal' },
+                    { src: 'img/Logo-GM/logo-name.png', caption: 'Logo avec mon nom' },
+                    { src: 'img/Logo-GM/logo-GM-sombre.png', caption: 'Version sombre' },
+                ]}
+            />
+
+            <LogoVariant
+                title="Interdits du logo"
+                variants={[
+                    { src: 'img/Logo-GM/colors-changed.png', caption: 'Interdit de changer la couleur' },
+                    { src: 'img/Logo-GM/logo-white.png', caption: 'Interdit de mettre en blanc' },
+                ]}
+            />
         </>
     );
 };
