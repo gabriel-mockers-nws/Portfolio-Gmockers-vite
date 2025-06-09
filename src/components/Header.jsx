@@ -9,7 +9,7 @@ export const Header = ({ lightMode, setLightMode }) => {
                 <nav className="pt-4 mx-1.5 flex items-center justify-between font-Orbitron">
                     <div className="ml-4">
                         <img src="./img/logo-GM.png" alt="Mon logo" className="max-h-15 mx-3 my-2"/>
-                        
+
                     </div>
                     <div className="space-x-6">
                         <button onClick={() => setLightMode(prev => !prev)} 
@@ -23,6 +23,11 @@ export const Header = ({ lightMode, setLightMode }) => {
                         <Link to="/projet" className="p-3  hover:text-orange-400 light:hover:text-purple-700 transition-colors duration-300 ease-in-out font-bold focus:text-orange-500">
                             Projets
                         </Link>
+
+                        <Link to="/charte-graphique" className="p-3  hover:text-orange-400 light:hover:text-purple-700 transition-colors duration-300 ease-in-out font-bold focus:text-orange-500">
+                            Charte graphique
+                        </Link>
+
                         <Link to="/Contact" className="p-3  hover:text-orange-400 light:hover:text-purple-700 transition-colors duration-300 ease-in-out font-bold focus:text-orange-500">
                             Me contacter
                         </Link>
