@@ -8,6 +8,7 @@ import Projects  from './pages/projet';
 import DevProjects from './pages/devProjects';
 import OtherProjects  from './pages/otherProjects';
 import ContactForm from './pages/contact';
+import CharteGraph  from './pages/charte-graphique';
 import CGU from './pages/cgu';
 import { useState, useEffect } from "react";
 // const router = createBrowserRouter([
@@ -39,6 +40,7 @@ function App() {
           <Route path='/devProjects' element={<DevProjects/>}/>
           <Route path='/otherProjects' element={<OtherProjects/>}/>
           <Route path='/contact' element={<ContactForm/>}/>
+          <Route path='/charte-graphique' element={<CharteGraph/>}/>
           <Route path='/cgu' element={<CGU/>}/>
         </Routes>
         <Footer />
