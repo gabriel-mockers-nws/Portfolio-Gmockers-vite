@@ -10,21 +10,18 @@ export default function Article({
   buttons = [],
   children,
 }) {
-  const isCarousel = imageType === "carousel" && Array.isArray(images); // On vérifie si imageType est "carousel" et si images est un tableau
-  const isVideo = imageType === "video"; // Vérifie si c'est une vidéo YouTube
+  const isCarousel = imageType === "carousel" && Array.isArray(images);
+  const isVideo = imageType === "video"; 
   
-  // Assurez-vous que l'URL de la vidéo YouTube est bien formatée
   const videoUrl = isVideo ? `https://www.youtube.com/embed/${images}` : null; // ternaire
 
   return (
     <div className={`flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-15 my-10 mx-4 md:mx-35`}> {/* Condition ternaire */} 
-      {/* Zone image, vidéo ou carousel */}
       <div className="w-full md:w-[40%] flex justify-center my-20 overflow-visible">
 
         {isCarousel ? (
           <SwiperCarousel images={images} />
         ) : isVideo ? (
-          // Intégration de l'iframe YouTube
           <iframe
             width="100%"
             height="auto"
@@ -43,7 +40,6 @@ export default function Article({
         )}
       </div>
 
-      {/* Zone texte + boutons */}
       <div className="w-full md:w-[65%] text-center md:text-left">
         <h4 className="text-xl font-semibold mb-8 font-inter">{title}</h4>
         <div className="text-base leading-relaxed mb-4">{children}</div>
