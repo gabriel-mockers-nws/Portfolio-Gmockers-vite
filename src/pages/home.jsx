@@ -4,32 +4,29 @@ export const Home = () => {
     return (
         <>
             <div className="flex flex-col-reverse lg:flex-row items-center justify-between px-6 py-10 md:px-10 lg:px-16 xl:px-20 gap-10 mb-12">
-            {/* Texte à gauche sur grand écran, en dessous sur petit */}
-            <div className="w-full lg:w-1/2">
-                <h3 className="text-3xl font-bold underline underline-offset-4 font-Orbitron">Qui suis-je ?</h3>
-                <p className="mt-6 mb-8">
-                Bienvenue sur ce Portfolio. Je m&apos;appelle Gabriel, un étudiant dynamique et social, 
-                &quot;Chef de projet Digital&quot; option développement web, en recherche d&apos;alternance.
-                Passionné par le web depuis longtemps, j&apos;ai réalisé plusieurs projets personnels et professionnels 
-                qui sont présentés sur ce magnifique site Portfolio développé en React.
-                Alors, n&apos;ayez plus d&apos;hésitation et consultez mon site pour découvrir mes projets, 
-                mais aussi mes passions et centres d&apos;intérêts. Je suis certain que nous en partageons quelques-uns !
-                </p>
-                <Button href="/pdf/CV-Mockers-Gabriel-développement-et-intégration-web .pdf" isExternal>
-                Télécharger mon CV &nbsp; <i className="fa-solid fa-file-arrow-down" />
-                </Button>
-            </div>
+                <div className="w-full lg:w-1/2">
+                    <h3 className="text-3xl font-bold underline underline-offset-4 font-Orbitron">Qui suis-je ?</h3>
+                    <p className="mt-6 mb-8">
+                    Bienvenue sur ce Portfolio. Je m&apos;appelle Gabriel, un étudiant dynamique et social, 
+                    &quot;Chef de projet Digital&quot; option développement web, en recherche d&apos;alternance.
+                    Passionné par le web depuis longtemps, j&apos;ai réalisé plusieurs projets personnels et professionnels 
+                    qui sont présentés sur ce magnifique site Portfolio développé en React.
+                    Alors, n&apos;ayez plus d&apos;hésitation et consultez mon site pour découvrir mes projets, 
+                    mais aussi mes passions et centres d&apos;intérêts. Je suis certain que nous en partageons quelques-uns !
+                    </p>
+                    <Button href="/pdf/CV-Mockers-Gabriel-développement-et-intégration-web .pdf" isExternal>
+                    Télécharger mon CV &nbsp; <i className="fa-solid fa-file-arrow-down" />
+                    </Button>
+                </div>
 
-            {/* Image à droite sur grand écran, au-dessus sur petit */}
-            <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
-                <img 
-                src="img/photo-profil.jpg" 
-                alt="Gabriel" 
-                className="rounded-lg w-[250px] md:w-[300px] lg:w-[300px] xl:w-[350px] object-cover shadow-lg transition-all "
-                />
+                <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
+                    <img 
+                    src="img/photo-profil.jpg" 
+                    alt="Gabriel" 
+                    className="rounded-lg w-[250px] md:w-[300px] lg:w-[300px] xl:w-[350px] object-cover shadow-lg transition-all "
+                    />
+                </div>
             </div>
-            </div>
-
 
             <div className="w-full py-5 px-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg  light:bg-linear-to-r light:from-cyan-500 light:to-blue-500 ">
                 <h3 className="text-3xl font-bold mb-6 underline underline-offset-15 font-Orbitron">Mes centres d&apos;intérêts</h3>
