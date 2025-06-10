@@ -119,10 +119,6 @@ Pour déployer votre propre version :
 - **PostCSS** - Transformation CSS
 - **TypeScript** - Typage statique
 
-## 📄 Licence
-
-Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
 ## 👤 Auteur
 
 **Gabriel Mockers**
