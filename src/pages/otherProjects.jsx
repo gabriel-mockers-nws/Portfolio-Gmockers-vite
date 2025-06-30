@@ -6,12 +6,12 @@ const ImagesToolBox = [
     "/img/OtherProjects/projet-photo/profil.JPG",
 ];
 
-const ImagesUX_UI = [
-    "/img/OtherProjects/BDEShop/maquette.png",
-    "/img/OtherProjects/BDEShop/BDEShopD1.png",
-    "/img/OtherProjects/BDEShop/BDEShopM1.png",
-    "/img/OtherProjects/BDEShop/BDEShopM2.png",
-];
+// const ImagesUX_UI = [
+//     "/img/OtherProjects/BDEShop/maquette.png",
+//     "/img/OtherProjects/BDEShop/BDEShopD1.png",
+//     "/img/OtherProjects/BDEShop/BDEShopM1.png",
+//     "/img/OtherProjects/BDEShop/BDEShopM2.png",
+// ];
 
 const LogoVectoriels = [
     "/img/OtherProjects/logo-vectoriel/logo-vec-1.png",
@@ -49,8 +49,8 @@ export const OtherProjects = () => {
 
         <Article
             title="BDE Shop"
-            imageType="carousel"
-            images={ImagesUX_UI}
+            imageType="figma"
+            images="https://embed.figma.com/design/VpUzwJL5Tz5EkgRhvKcq0Q/UX---UI?node-id=0-1&embed-host=share" 
             reverse={false}
             >
                 Dans ce projet, nous devion faire le wireframe &#40;Image 1&#41; ainsi que le maquettage d&apos;un sitre de e-commerce de vente pour des goodies du BDE de la Normandie Web School. Pour ce faire, nous avons appris à utiliser Figma. <br /> &#40;Voir projet Marketing pour voir la réalisation de ce site&#41;
@@ -106,6 +106,24 @@ export const OtherProjects = () => {
                 - Une cinquième qui en fait une apparence d&apos;une école plus enfantine, maternelle. <br />
                 - Une sixième en m&apos;inspirant des blasons médiéval. 
 
+        </Article>
+
+        <Article
+            title="Projet chaine youtube"
+            imageType="figma"
+            images="https://embed.figma.com/proto/BDyE3eXuvE4uqFp2kevT6n/Untitled?node-id=1-2&p=f&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&embed-host=share"
+            reverse={true}
+            >
+                Nous devions réaliser en projet une chaine youtube sur un sujet de notre choix. Pour ce faire, nous avons dû créer la charte graphique de la chaine, le logo, la bannière, les miniatures des vidéos, et le nom de la chaine. <br />
+                Pour ce faire, nous avons utilisé Figma pour la création de la charte graphique,
+        </Article>
+
+        <Article
+            title="Maquette questionnaire"
+            imageType="figma"
+            images="https://embed.figma.com/proto/S7nmbR1txVdpNZipwPrjC5/Odcvl-questionary?node-id=1-2&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&embed-host=share"
+            >
+                Durant mon stage à Odcvl, j&apos;ai d&apos;abord effectué une maquette Figma pour présenter l&apos;aparence que pourrait avoir le questionnaire, afin de savoir si cela leur conviendrait.
         </Article>
 
         <div className="flex justify-center my-10">
