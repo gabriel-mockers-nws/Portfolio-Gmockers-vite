@@ -11,9 +11,11 @@ export default function Article({
   children,
 }) {
   const isCarousel = imageType === "carousel" && Array.isArray(images);
-  const isVideo = imageType === "video"; 
+  const isVideo = imageType === "video";
+  const isfigma = imageType === "figma";
   
   const videoUrl = isVideo ? `https://www.youtube.com/embed/${images}` : null; // ternaire
+  const figmaurl = isfigma ? images : null;
 
   return (
     <>
@@ -31,6 +33,15 @@ export default function Article({
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="w-full h-[27vh] object-cover rounded-lg shadow-lg "
+            />
+          ) : isfigma ? (
+            <iframe
+              width="100%"
+              height="auto"
+              src={figmaurl}
+              title="Figma design"
+              allowFullScreen
+              className="w-full h-[27vh] object-cover rounded-lg shadow-lg"
             />
           ) : (
             <img
@@ -69,7 +80,7 @@ export default function Article({
 Article.propTypes = {
   title: PropTypes.string.isRequired,
   reverse: PropTypes.bool,
-  imageType: PropTypes.oneOf(["image", "carousel", "video"]), 
+  imageType: PropTypes.oneOf(["image", "carousel", "video", "figma"]), 
   images: PropTypes.oneOfType([
     PropTypes.string, 
     PropTypes.arrayOf(PropTypes.string),
