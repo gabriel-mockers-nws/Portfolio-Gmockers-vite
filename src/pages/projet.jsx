@@ -27,7 +27,7 @@ export const Projects = () => {;
     <Article
         title="Mes autres projets"
         imageType="image"
-        images="/img/OtherProjects/action-marketing.png"
+        images="/img/otherProjects/action-marketing.png"
         reverse={true}
         buttons={[
             {
