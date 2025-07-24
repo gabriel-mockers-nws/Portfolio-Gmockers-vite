@@ -2,24 +2,24 @@ import Article from "../components/Article";
 import Button from "../components/Button";
 
 const ImagesToolBox = [
-    "/img/OtherProjects/projet-photo/face.JPG",
-    "/img/OtherProjects/projet-photo/profil.JPG",
+    "/img/otherProjects/projet-photo/face.JPG",
+    "/img/otherProjects/projet-photo/profil.JPG",
 ];
 
 // const ImagesUX_UI = [
-//     "/img/OtherProjects/BDEShop/maquette.png",
-//     "/img/OtherProjects/BDEShop/BDEShopD1.png",
-//     "/img/OtherProjects/BDEShop/BDEShopM1.png",
-//     "/img/OtherProjects/BDEShop/BDEShopM2.png",
+//     "/img/otherProjects/BDEShop/maquette.png",
+//     "/img/otherProjects/BDEShop/BDEShopD1.png",
+//     "/img/otherProjects/BDEShop/BDEShopM1.png",
+//     "/img/otherProjects/BDEShop/BDEShopM2.png",
 // ];
 
 const LogoVectoriels = [
-    "/img/OtherProjects/logo-vectoriel/logo-vec-1.png",
-    "/img/OtherProjects/logo-vectoriel/logo-vec-2.png",
-    "/img/OtherProjects/logo-vectoriel/logo-vec-3.png",
-    "/img/OtherProjects/logo-vectoriel/logo-vec-4.png",
-    "/img/OtherProjects/logo-vectoriel/logo-vec-5.png",
-    "/img/OtherProjects/logo-vectoriel/logo-vec-6.png",
+    "/img/otherProjects/logo-vectoriel/logo-vec-1.png",
+    "/img/otherProjects/logo-vectoriel/logo-vec-2.png",
+    "/img/otherProjects/logo-vectoriel/logo-vec-3.png",
+    "/img/otherProjects/logo-vectoriel/logo-vec-4.png",
+    "/img/otherProjects/logo-vectoriel/logo-vec-5.png",
+    "/img/otherProjects/logo-vectoriel/logo-vec-6.png",
 ];
 
 export const OtherProjects = () => {
@@ -60,7 +60,7 @@ export const OtherProjects = () => {
         <Article
             title="Persona"
             imageType="image"
-            images="/img/OtherProjects/Persona.svg"
+            images="/img/otherProjects/Persona.svg"
             reverse={true}
             >
                 Ce projet représente la création d&apos;un persona, la compréhension des attentes d&apos;une cible, connaitre ses besoins, ses craintes, et comment bien la représenter pour adapter notre campagne de communication.
@@ -69,7 +69,7 @@ export const OtherProjects = () => {
         <Article
             title="Action Marketing"
             imageType="image"
-            images="/img/OtherProjects/action-marketing.png"
+            images="/img/otherProjects/action-marketing.png"
             reverse={false}
             buttons={[
                 {
@@ -86,7 +86,7 @@ export const OtherProjects = () => {
         <Article
             title="BDE Shop"
             imageType="image"
-            images="/img/OtherProjects/BDEShopD3.png"
+            images="/img/otherProjects/BDEShopD3.png"
             reverse={true}
             >
                 Nous avions pour devoir de réaliser le site de vente du BDE de la Normandie Web school à partir de la maquette figma conçue auparavant &#40;voir projet UX/UI dans l&apos;onglet communication graphique&#41;. Le tout en respectant une charte graphique déjà existante.
