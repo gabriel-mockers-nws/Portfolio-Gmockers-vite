@@ -32,12 +32,13 @@ export const OtherProjects = () => {
             images={ImagesToolBox}
             reverse={false}
             >
-                Nous avions pour devoir de réaliser le site de vente du BDE de la Normandie Web school à partir de la maquette figma conçue auparavant &#40;voir projet UX/UI dans l&apos;onglet communication graphique&#41;. Le tout en respectant une charte graphique déjà existante.
+                Dans ce projet, nous devions réaliser un projet photo, trouver un thème, une mise en scène, et apprendre à utiliser un appareil photo hybride. <br />
+                Par la suite, nous avons également dû retoucher les photos avec un logiciel de retouche photo, pour cela nous avons utilisé Adobe Lightroom. <br />
         </Article>
 
         <Article
             title="Projet Vidéo"
-            imageType="video" // Ici, on indique qu'il s'agit d'une vidéo YouTube
+            imageType="video"
             images="NSnTVHA555c" // L'ID de la vidéo YouTube
             reverse={true}
             >
