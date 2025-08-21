@@ -132,7 +132,7 @@ export const Home = () => {
                         Compréhension & réalisation de projet publicitaire pour une marque.
                     </p>
                     <img
-                        src="/img/OtherProjects/action-marketing.png"
+                        src="/img/otherProjects/action-marketing.png"
                         alt="presentation-support"
                         className="h-[27vh] w-[60vh] mx-auto rounded-lg shadow-lg "
                     />
