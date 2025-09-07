@@ -14,7 +14,7 @@ export const Home = () => {
                     Alors, n&apos;ayez plus d&apos;hésitation et consultez mon site pour découvrir mes projets, 
                     mais aussi mes passions et centres d&apos;intérêts. Je suis certain que nous en partageons quelques-uns !
                     </p>
-                    <Button href="/pdf/CV-Mockers-Gabriel-développement-et-intégration-web .pdf" isExternal>
+                    <Button href="/pdf/CV-Mockers-Gabriel.pdf" isExternal>
                     Télécharger mon CV &nbsp; <i className="fa-solid fa-file-arrow-down" />
                     </Button>
                 </div>
@@ -93,7 +93,7 @@ export const Home = () => {
 
                 <Button href={"/Contact"}>Me contacter &nbsp; <i className="fa-solid fa-envelope"/></Button>
 
-                <Button href={"/pdf/CV-Mockers-Gabriel-développement-et-intégration-web .pdf"} isExternal>Télécharger mon CV &nbsp; <i className="fa-solid fa-file-arrow-down"/></Button>
+                <Button href={"/pdf/CV-Mockers-Gabriel.pdf"} isExternal>Télécharger mon CV &nbsp; <i className="fa-solid fa-file-arrow-down"/></Button>
 
             </div>
 
