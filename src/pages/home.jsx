@@ -8,13 +8,13 @@ export const Home = () => {
                     <h3 className="text-3xl font-bold underline underline-offset-4 font-Orbitron">Qui suis-je ?</h3>
                     <p className="mt-6 mb-8">
                     Bienvenue sur ce Portfolio. Je m&apos;appelle Gabriel, un étudiant dynamique et social, 
-                    &quot;Chef de projet Digital&quot; option développement web, en recherche d&apos;alternance.
+                    &quot;Chef de projet Digital&quot; option communication et marketing digital, en recherche d&apos;alternance.
                     Passionné par le web depuis longtemps, j&apos;ai réalisé plusieurs projets personnels et professionnels 
                     qui sont présentés sur ce magnifique site Portfolio développé en React.
                     Alors, n&apos;ayez plus d&apos;hésitation et consultez mon site pour découvrir mes projets, 
                     mais aussi mes passions et centres d&apos;intérêts. Je suis certain que nous en partageons quelques-uns !
                     </p>
-                    <Button href="/pdf/CV-Mockers-Gabriel.pdf" isExternal>
+                    <Button href="/pdf/CV-Mockers-Gabriel-CMD.pdf" isExternal>
                     Télécharger mon CV &nbsp; <i className="fa-solid fa-file-arrow-down" />
                     </Button>
                 </div>
@@ -93,7 +93,7 @@ export const Home = () => {
 
                 <Button href={"/Contact"}>Me contacter &nbsp; <i className="fa-solid fa-envelope"/></Button>
 
-                <Button href={"/pdf/CV-Mockers-Gabriel.pdf"} isExternal>Télécharger mon CV &nbsp; <i className="fa-solid fa-file-arrow-down"/></Button>
+                <Button href={"/pdf/CV-Mockers-Gabriel-CMD.pdf"} isExternal>Télécharger mon CV &nbsp; <i className="fa-solid fa-file-arrow-down"/></Button>
 
             </div>
 
