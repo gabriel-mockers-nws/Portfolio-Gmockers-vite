@@ -35,11 +35,11 @@ export const Header = ({ lightMode, setLightMode }) => {
                 </nav>
             </div>
             <div>
-                <h1 className="text-orange-400 light:text-orange-500 xl:text-8xl font-bold mx-9 font-Orbitron lg:text-5xl md:text-3xl sm:text-2xl">
+                <h1 className="text-orange-400 light:text-orange-500 xl:text-7xl font-bold mx-9 font-Orbitron lg:text-5xl md:text-3xl sm:text-2xl">
                 <Typewriter
-                    words={['Développeur Web']}
+                    words={['Marketing & communication digitale']}
                     cursor
-                    cursorStyle="/>"
+                    cursorStyle="|"
                     typeSpeed={150}
                     delaySpeed={1000}
                 />
