@@ -37,7 +37,7 @@ export const Header = ({ lightMode, setLightMode }) => {
             <div>
                 <h1 className="text-orange-400 light:text-orange-500 xl:text-7xl font-bold mx-9 font-Orbitron lg:text-5xl md:text-3xl sm:text-2xl">
                 <Typewriter
-                    words={['Marketing & communication digitale']}
+                    words={['Marketing & communication digital']}
                     cursor
                     cursorStyle="|"
                     typeSpeed={150}
