@@ -12,7 +12,7 @@ export const Projects = () => {;
       buttons={[
           {
           label: "Voir le projet",
-          href: "https://www.canva.com/design/DAGba5z4tPo/X7pvPWmWuby2yWPIWkIPqg/edit",
+          href: "https://www.canva.com/design/DAGba5z4tPo/IxB5CXkZe4S9jc1gqLr5vA/view?utm_content=DAGba5z4tPo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hefe0c8c6b1",
           iconClass: "fa-solid fa-diagram-project",
           isExternal: true
           },
