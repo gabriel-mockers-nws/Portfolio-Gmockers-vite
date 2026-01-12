@@ -13,6 +13,7 @@ export default function Article({
   const isCarousel = imageType === "carousel" && Array.isArray(images);
   const isVideo = imageType === "video";
   const isfigma = imageType === "figma";
+  const isCanva = imageType === "canva";
   
   const videoUrl = isVideo ? `https://www.youtube.com/embed/${images}` : null; // ternaire
   const figmaurl = isfigma ? images : null;
@@ -41,6 +42,16 @@ export default function Article({
               src={figmaurl}
               title="Figma design"
               allowFullScreen
+              className="w-full h-[27vh] object-cover rounded-lg shadow-lg"
+            />
+          ) : isCanva ? ( // Canva embled condition prepared 
+            <iframe
+              width="100%"
+              height="auto"
+              src={images}
+              title="Canva Design"
+              allowFullScreen
+              loading="lazy"
               className="w-full h-[27vh] object-cover rounded-lg shadow-lg"
             />
           ) : (
@@ -80,7 +91,7 @@ export default function Article({
 Article.propTypes = {
   title: PropTypes.string.isRequired,
   reverse: PropTypes.bool,
-  imageType: PropTypes.oneOf(["image", "carousel", "video", "figma"]), 
+  imageType: PropTypes.oneOf(["image", "carousel", "video", "figma", "canva"]), 
   images: PropTypes.oneOfType([
     PropTypes.string, 
     PropTypes.arrayOf(PropTypes.string),
