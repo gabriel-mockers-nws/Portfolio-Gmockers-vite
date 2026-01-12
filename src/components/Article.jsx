@@ -8,6 +8,7 @@ export default function Article({
   imageType = 'image',
   images,
   buttons = [],
+  fullImage = false, //image pleine taille 
   children,
 }) {
   const isCarousel = imageType === "carousel" && Array.isArray(images);
@@ -25,7 +26,7 @@ export default function Article({
 
           {isCarousel ? (
             <SwiperCarousel images={images} />
-          ) : isVideo ? (
+          ) : isVideo ? ( //condition si vidéo 
             <iframe
               width="100%"
               height="auto"
@@ -35,7 +36,7 @@ export default function Article({
               allowFullScreen
               className="w-full h-[27vh] object-cover rounded-lg shadow-lg "
             />
-          ) : isfigma ? (
+          ) : isfigma ? ( //condition si projet figma
             <iframe
               width="100%"
               height="auto"
@@ -58,7 +59,11 @@ export default function Article({
             <img
               src={images}
               alt={title}
-              className="h-[27vh] w-[60vh] object-cover rounded-lg shadow-lg"
+              className={
+                fullImage
+                  ? "w-full h-auto max-h-none rounded-lg shadow-lg" //condition pour image pleine taille 
+                  : "h-[27vh] w-[60vh] object-cover rounded-lg shadow-lg"
+              }
             />
           )}
         </div>
@@ -105,5 +110,6 @@ Article.propTypes = {
       className: PropTypes.string,
     })
   ),
+  fullImage: PropTypes.bool,
   children: PropTypes.node.isRequired,
 };
