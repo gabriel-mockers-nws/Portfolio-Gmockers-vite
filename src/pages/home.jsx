@@ -14,14 +14,14 @@ export const Home = () => {
                     Alors, n&apos;ayez plus d&apos;hésitation et consultez mon site pour découvrir mes projets, 
                     mais aussi mes passions et centres d&apos;intérêts. Je suis certain que nous en partageons quelques-uns !
                     </p>
-                    <Button href="/pdf/CV-Mockers-Gabriel-CMD.pdf" isExternal>
+                    <Button href="/pdf/CV-CMD-Mockers-Gabriel-Alternance.pdf" isExternal>
                     Télécharger mon CV &nbsp; <i className="fa-solid fa-file-arrow-down" />
                     </Button>
                 </div>
 
                 <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
                     <img 
-                    src="img/photo-profil.jpg" 
+                    src="img/Gabriel-profil.png" 
                     alt="Gabriel" 
                     className="rounded-lg w-[250px] md:w-[300px] lg:w-[300px] xl:w-[350px] object-cover shadow-lg transition-all "
                     />
@@ -29,10 +29,11 @@ export const Home = () => {
             </div>
 
             <div className="w-full py-5 px-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg  light:bg-linear-to-r light:from-cyan-500 light:to-blue-500 ">
-            <h3 className="text-2xl md:text-3xl font-bold mb-6 underline underline-offset-4 md:underline-offset-[15px] font-Orbitron">
-Mes centres d&apos;intérêt</h3>
+                <h3 className="text-2xl md:text-3xl font-bold mb-6 underline underline-offset-4 md:underline-offset-[15px] font-Orbitron">
+                    Mes centres d&apos;intérêts
+                </h3>
 
-                <div className="xl:grid xl:grid-cols-2 gap-10 lg:grid md:grid xl:px-10 xl:pr-20">
+                <div className="grid grid-cols-1 gap-6 md:gap-10 xl:grid-cols-2 xl:px-10 xl:pr-20">
                     <div>
                         <h4 className="text-xl font-semibold mb-2">Voyages</h4>
                         <p className="text-sm">
@@ -94,7 +95,7 @@ Mes centres d&apos;intérêt</h3>
 
                 <Button href={"/Contact"}>Me contacter &nbsp; <i className="fa-solid fa-envelope"/></Button>
 
-                <Button href={"/pdf/CV-Mockers-Gabriel-CMD.pdf"} isExternal>Télécharger mon CV &nbsp; <i className="fa-solid fa-file-arrow-down"/></Button>
+                <Button href={"/pdf/CV-CMD-Mockers-Gabriel-Alternance.pdf"} isExternal>Télécharger mon CV &nbsp; <i className="fa-solid fa-file-arrow-down"/></Button>
 
             </div>
 
