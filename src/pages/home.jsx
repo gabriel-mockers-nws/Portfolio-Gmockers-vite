@@ -8,7 +8,7 @@ export const Home = () => {
                     <h3 className="text-3xl font-bold underline underline-offset-4 font-Orbitron">Qui suis-je ?</h3>
                     <p className="mt-6 mb-8">
                     Bienvenue sur ce Portfolio. Je m&apos;appelle Gabriel, un étudiant dynamique et social, 
-                    &quot;Chef de projet Digital&quot; option communication et marketing digital, en recherche d&apos;alternance.
+                    &quot;Chef de projet Digital&quot; option marketing et communication digitale, en recherche d&apos;alternance.
                     Passionné par le web depuis longtemps, j&apos;ai réalisé plusieurs projets personnels et professionnels 
                     qui sont présentés sur ce magnifique site Portfolio développé en React.
                     Alors, n&apos;ayez plus d&apos;hésitation et consultez mon site pour découvrir mes projets, 
@@ -29,7 +29,8 @@ export const Home = () => {
             </div>
 
             <div className="w-full py-5 px-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg  light:bg-linear-to-r light:from-cyan-500 light:to-blue-500 ">
-                <h3 className="text-3xl font-bold mb-6 underline underline-offset-15 font-Orbitron">Mes centres d&apos;intérêts</h3>
+            <h3 className="text-2xl md:text-3xl font-bold mb-6 underline underline-offset-4 md:underline-offset-[15px] font-Orbitron">
+Mes centres d&apos;intérêt</h3>
 
                 <div className="xl:grid xl:grid-cols-2 gap-10 lg:grid md:grid xl:px-10 xl:pr-20">
                     <div>
