@@ -35,10 +35,76 @@ const Haribo = [
     "img/otherProjects/Haribo/haribo3.png"
 ]
 
+const Flyer1 = [
+    "img/otherProjects/flyers-sphinx-atelier/Flyer-recto.JPEG",
+    "img/otherProjects/flyers-sphinx-atelier/Flyer-verso.JPEG"
+]
+
 export const OtherProjects = () => {
     return (
         <>
-        <h3 className="text-center m-19 text-3xl font-Orbitron font-black">Projets marketing et communication digital</h3>
+        <h3 className="text-center m-19 text-3xl font-Orbitron font-black">Projets marketing et communication digitale</h3>
+
+        <Article
+            title="Stratégie de communication"
+            imageType="image"
+            images="/img/otherProjects/Graine-de-yoga.png"
+            reverse={false}
+                buttons={[
+                {
+                label: "Voir le projet",
+                href: "https://canva.link/hzisbbii75cq7ps",
+                iconClass: "fa-solid fa-diagram-project",
+                isExternal: true
+                }
+            ]}>
+                Pendant un projet donné à l&apos;école dure la fabrique à projets, j&apos;pu effectuer une stratégie de communication complète pour l&apos;entreprise Graine de Yoga, en abordant plusieurs points. Partant d&apos;un petit audit de l&apos;exsitant jusqu&apos;à la stratégie complète et proposition d&apos;améliorations.
+        </Article>
+
+        <Article
+            title="Flyer pour Sphinx Atlelier"
+            imageType="carousel"
+            images={Flyer1}
+            reverse={true}
+            >
+                Pour le stage à Sphynx Atelier j&apos;ai aussi dû réaliser et réfléchir à un flyers qui pourra être distribué aux comerçants proche du studio.
+        </Article>
+
+        <Article
+            title="Charte éditoriale Sphinx Atelier"
+            imageType="image"
+            images="/img/otherProjects/charte-edito.png"
+            reverse={false}
+                buttons={[
+                {
+                label: "Voir le projet",
+                href: "https://canva.link/taf1mnqzf4i57o3",
+                iconClass: "fa-solid fa-diagram-project",
+                isExternal: true
+                }
+            ]}
+            >
+                En second, pour le même stage, après avoir fait le rebranding graphique, il a fallut établir une véritable charte et ligne éditoriale, afin d&apos;avoir une cohérence dans la communication et d&apos;établir sa cible. 
+
+        </Article>
+
+        <Article
+            title="Charte graphique Sphinx Atelier"
+            imageType="image"
+            images="/img/otherProjects/logo-sphinx-atelier.jpg"
+            reverse={true}
+            fullImage={true}
+            buttons={[
+                {
+                label: "Voir le projet",
+                href: "https://canva.link/gllm8ajcxr4xt1i",
+                iconClass: "fa-solid fa-diagram-project",
+                isExternal: true
+                }
+            ]}
+            >
+                Pour le stage de ma deuxième année, j&apos;ai dû effectuer un rebranding complet d&apos;une entreprise existante. Sphinx Atelier était déjà présent sous le nom de Sphinx Tatoo en Suisse, mais pour son déménagement en Allemagne le gérant souhaitait repartir sur une nouvelle identité graphique (Contenu en allemand).
+        </Article>
 
         <Article
             title="Post jeu-concours"
@@ -155,7 +221,7 @@ export const OtherProjects = () => {
                 isExternal: true
                 }
             ]}>
-                Ce projet est dédié à la création et l&apos;élaboration de la charte éditoriale. La comprhéension de la cible, la ligne éditoriale, le calendrider de publications, et quelques exempled e posts à faire pour les réseaux sociaux.
+                Ce projet est dédié à la création et l&apos;élaboration de la charte éditoriale. La comprhéension de la cible, la ligne éditoriale, le calendrider de publications, et quelques exemples de posts à faire pour les réseaux sociaux.
         </Article>
 
         <Article
