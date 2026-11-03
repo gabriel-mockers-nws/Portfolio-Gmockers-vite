@@ -8,7 +8,7 @@ export const Home = () => {
                     <h3 className="text-3xl font-bold underline underline-offset-4 font-Orbitron">Qui suis-je ?</h3>
                     <p className="mt-6 mb-8">
                     Bienvenue sur ce Portfolio. Je m&apos;appelle Gabriel, un étudiant dynamique et social, 
-                    &quot;Chef de projet Digital&quot; option marketing et communication digitale, en recherche d&apos;alternance.
+                    &quot;Product Builder No-code&quot; option marketing et communication digitale, en recherche d&apos;alternance.
                     Passionné par le web depuis longtemps, j&apos;ai réalisé plusieurs projets personnels et professionnels 
                     qui sont présentés sur ce magnifique site Portfolio développé en React.
                     Alors, n&apos;ayez plus d&apos;hésitation et consultez mon site pour découvrir mes projets, 
