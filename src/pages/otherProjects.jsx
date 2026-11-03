@@ -58,7 +58,7 @@ export const OtherProjects = () => {
                 isExternal: true
                 }
             ]}>
-                Pendant un projet donné à l&apos;école dure la fabrique à projets, j&apos;pu effectuer une stratégie de communication complète pour l&apos;entreprise Graine de Yoga, en abordant plusieurs points. Partant d&apos;un petit audit de l&apos;exsitant jusqu&apos;à la stratégie complète et proposition d&apos;améliorations.
+                Pendant un projet donné à l&apos;école dure la fabrique à projets, j&apos;ai pus effectuer une stratégie de communication complète pour l&apos;entreprise Graine de Yoga, en abordant plusieurs points. Partant d&apos;un petit audit de l&apos;exsitant jusqu&apos;à la stratégie complète et proposition d&apos;améliorations.
         </Article>
 
         <Article
