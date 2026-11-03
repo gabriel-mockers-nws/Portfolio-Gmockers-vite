@@ -49,7 +49,7 @@ export const OtherProjects = () => {
             title="Stratégie de communication"
             imageType="image"
             images="/img/otherProjects/Graine-de-yoga.png"
-            reverse={false}
+            reverse={true}
                 buttons={[
                 {
                 label: "Voir le projet",
@@ -59,6 +59,23 @@ export const OtherProjects = () => {
                 }
             ]}>
                 Pendant un projet donné à l&apos;école dure la fabrique à projets, j&apos;pu effectuer une stratégie de communication complète pour l&apos;entreprise Graine de Yoga, en abordant plusieurs points. Partant d&apos;un petit audit de l&apos;exsitant jusqu&apos;à la stratégie complète et proposition d&apos;améliorations.
+        </Article>
+
+        <Article
+            title="gestion du compte instagram"
+            imageType="image"
+            images="/img/otherProjects/Perf-Insta-Sphinx-Atelier.jpg"
+            reverse={false}
+            fullImage={true}
+                buttons={[
+                {
+                label: "Voir le comtpe",
+                href: "https://www.instagram.com/sphinx_atelier/",
+                iconClass: "fa-solid fa-diagram-project",
+                isExternal: true
+                }
+            ]}>
+                Durant mon stage à Sphinx Atelier en Allemagne, j&apos;était chargé à la fois du marketing mais aussi de la communication de l&apos;entreprise. Etant une ouverture suite à un déménagement et un changement d&apos;identité graphique, il fallait penser à tout le storytelling pouvant être fait.
         </Article>
 
         <Article
